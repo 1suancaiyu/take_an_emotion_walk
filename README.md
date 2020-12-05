@@ -3,12 +3,26 @@
 This is the official implementation of the paper Take an Emotion Walk: Perceiving Emotions from Gaits Using Hierarchical Attention Pooling and Affective Mapping. Please add the following citation in your work if you use our code:
 
 ```
-@InProceedings{taew,
-author = {Bhattacharya, Uttaran and Roncal, Christian and Mittal, Trisha and Chandra, Rohan and Bera, Aniket and Manocha, Dinesh},
-title = {Take an Emotion Walk: Perceiving Emotions from Gaits Using Hierarchical Attention Pooling and Affective Mapping},
-booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-month = {August},
-year = {2020}
+@InProceedings{bhattacharya2020taew,
+author="Bhattacharya, Uttaran
+and Roncal, Christian
+and Mittal, Trisha
+and Chandra, Rohan
+and Kapsaskis, Kyra
+and Gray, Kurt
+and Bera, Aniket
+and Manocha, Dinesh",
+editor="Vedaldi, Andrea
+and Bischof, Horst
+and Brox, Thomas
+and Frahm, Jan-Michael",
+title="Take an Emotion Walk: Perceiving Emotions from Gaits Using Hierarchical Attention Pooling and Affective Mapping",
+booktitle="Computer Vision -- ECCV 2020",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="145--163",
+isbn="978-3-030-58607-2"
 }
 ```
 
