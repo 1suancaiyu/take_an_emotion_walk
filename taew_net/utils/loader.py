@@ -16,7 +16,7 @@ from torchvision import datasets, transforms
 
 
 def load_ewalk_data(_path, coords, joints, upsample=1):
-
+    print("log: load_ewalk_data()")
     file_feature = os.path.join(_path, 'features' + '_ewalk.h5')
     ff = h5py.File(file_feature, 'r')
     file_label = os.path.join(_path, 'labels' + '_ewalk.h5')
@@ -54,6 +54,7 @@ def load_ewalk_data(_path, coords, joints, upsample=1):
 
 
 def load_edin_labels(_path, num_labels):
+    print("log: load_edin_labels()")
     labels_dir = os.path.join(_path, 'labels_edin_locomotion')
     annotators = os.listdir(labels_dir)
     num_annotators = len(annotators)
@@ -112,6 +113,7 @@ def load_edin_labels(_path, num_labels):
 
 
 def load_edin_data(_path, coords, joints, num_labels, frame_drop=1):
+    print("wsx: load_edin_data()")
 
     edin_data_file = os.path.join(_path, 'data_edin_locomotion.npz')
     edin_diff_aff_file = os.path.join(_path, 'data_edin_locomotion_pose_diff_aff_drop_'
@@ -142,6 +144,9 @@ def load_edin_data(_path, coords, joints, num_labels, frame_drop=1):
     labels, num_annotators = load_edin_labels(_path, poses.shape[0])
     labels /= (num_annotators * 2.)
     label_partitions = np.append([0], np.cumsum(num_labels))
+    print('[log]: num_labels)\n',num_labels)
+    print('[log]: np.cumsum(num_labels)\n',np.cumsum(num_labels))
+    print('log: label_partitions',label_partitions.shape)
     for lpidx in range(len(num_labels)):
         labels[:, label_partitions[lpidx]:label_partitions[lpidx + 1]] =\
             labels[:, label_partitions[lpidx]:label_partitions[lpidx + 1]] /\

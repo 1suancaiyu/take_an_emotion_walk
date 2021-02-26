@@ -1,0 +1,438 @@
+./.git/hooks/fsmonitor-watchman.sample:75:	die "Watchman: command returned no output.\n" .
+./.git/hooks/fsmonitor-watchman.sample:77:	die "Watchman: command returned invalid output: $response\n" .
+./.git/hooks/fsmonitor-watchman.sample:99:		# Watchman will always return all files on the first query so
+./.git/hooks/fsmonitor-watchman.sample:100:		# return the fast "everything is dirty" flag to git and do the
+./step/torchlight/torchlight/io.py:55:        return model
+./step/torchlight/torchlight/io.py:90:        return model
+./step/torchlight/torchlight/io.py:141:        return self.cur_time
+./step/torchlight/torchlight/io.py:146:        return split_time
+./step/torchlight/torchlight/io.py:162:        return True
+./step/torchlight/torchlight/io.py:164:        return False
+./step/torchlight/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./step/torchlight/torchlight/io.py:178:    return mod
+./step/torchlight/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+./step/torchlight/torchlight/gpu.py:11:        return a list of new gpus ids
+./step/torchlight/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./step/torchlight/torchlight/gpu.py:23:    return len(gpus)
+./step/torchlight/build/lib/torchlight/io.py:55:        return model
+./step/torchlight/build/lib/torchlight/io.py:90:        return model
+./step/torchlight/build/lib/torchlight/io.py:141:        return self.cur_time
+./step/torchlight/build/lib/torchlight/io.py:146:        return split_time
+./step/torchlight/build/lib/torchlight/io.py:162:        return True
+./step/torchlight/build/lib/torchlight/io.py:164:        return False
+./step/torchlight/build/lib/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./step/torchlight/build/lib/torchlight/io.py:178:    return mod
+./step/torchlight/build/lib/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+./step/torchlight/build/lib/torchlight/gpu.py:11:        return a list of new gpus ids
+./step/torchlight/build/lib/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./step/torchlight/build/lib/torchlight/gpu.py:23:    return len(gpus)
+./step/utils/Quaternions.py:29:            return
+./step/utils/Quaternions.py:33:            return
+./step/utils/Quaternions.py:38:        return "Quaternions(" + str(self.qs) + ")"
+./step/utils/Quaternions.py:41:        return "Quaternions(" + repr(self.qs) + ")"
+./step/utils/Quaternions.py:48:        if isinstance(oqs, float): return sqs, oqs * np.ones(sqs.shape[:-1])
+./step/utils/Quaternions.py:56:        if np.all(ss == os): return sqs, oqs
+./step/utils/Quaternions.py:66:        return sqsn, oqsn
+./step/utils/Quaternions.py:71:        return self * other
+./step/utils/Quaternions.py:74:        return self / other
+./step/utils/Quaternions.py:117:            return Quaternions(qs)
+./step/utils/Quaternions.py:122:            return (self * (vs * -self)).imaginaries
+./step/utils/Quaternions.py:126:            return Quaternions.slerp(Quaternions.id_like(self), self, other)
+./step/utils/Quaternions.py:140:        if isinstance(other, Quaternions): return self * (-other)
+./step/utils/Quaternions.py:141:        if isinstance(other, np.ndarray): return self * (1.0 / other)
+./step/utils/Quaternions.py:142:        if isinstance(other, float): return self * (1.0 / other)
+./step/utils/Quaternions.py:146:        return self.qs == other.qs
+./step/utils/Quaternions.py:149:        return self.qs != other.qs
+./step/utils/Quaternions.py:153:        return Quaternions(self.qs * np.array([[1, -1, -1, -1]]))
+./step/utils/Quaternions.py:161:        return qabs
+./step/utils/Quaternions.py:164:        return iter(self.qs)
+./step/utils/Quaternions.py:167:        return len(self.qs)
+./step/utils/Quaternions.py:170:        return Quaternions(self.qs[k])
+./step/utils/Quaternions.py:177:        return np.sum(self.qs ** 2.0, axis=-1) ** 0.5
+./step/utils/Quaternions.py:181:        return self.qs[..., 0]
+./step/utils/Quaternions.py:185:        return self.qs[..., 1:4]
+./step/utils/Quaternions.py:189:        return self.qs.shape[:-1]
+./step/utils/Quaternions.py:192:        return Quaternions(self.qs.repeat(n, **kwargs))
+./step/utils/Quaternions.py:195:        return Quaternions(self.qs / self.lengths[..., np.newaxis])
+./step/utils/Quaternions.py:202:        return imgs * lens[..., np.newaxis]
+./step/utils/Quaternions.py:219:        return ret
+./step/utils/Quaternions.py:222:        return self.constrained(np.array([1, 0, 0]))
+./step/utils/Quaternions.py:225:        return self.constrained(np.array([0, 1, 0]))
+./step/utils/Quaternions.py:228:        return self.constrained(np.array([0, 0, 1]))
+./step/utils/Quaternions.py:231:        return np.sum(self.qs * q.qs, axis=-1)
+./step/utils/Quaternions.py:234:        return Quaternions(np.copy(self.qs))
+./step/utils/Quaternions.py:238:        return self
+./step/utils/Quaternions.py:241:        return Quaternions.exp(np.average(abs(self).log, axis=0, weights=ws))
+./step/utils/Quaternions.py:300:        return es
+./step/utils/Quaternions.py:310:            return Quaternions(v[:, np.argmin((1. - qiT_dot_qref ** 2).sum(axis=0))])
+./step/utils/Quaternions.py:325:        return angles, axis
+./step/utils/Quaternions.py:358:        return m
+./step/utils/Quaternions.py:361:        return self.qs.ravel()
+./step/utils/Quaternions.py:369:            return Quaternions(qs)
+./step/utils/Quaternions.py:374:            return Quaternions(qs)
+./step/utils/Quaternions.py:382:        return Quaternions(qs)
+./step/utils/Quaternions.py:397:        return Quaternions(qs).normalized()
+./step/utils/Quaternions.py:424:        return Quaternions(
+./step/utils/Quaternions.py:432:        return Quaternions(np.concatenate([w[..., np.newaxis], a], axis=-1)).normalized()
+./step/utils/Quaternions.py:439:        return Quaternions(np.concatenate([cosines, axis * sines], axis=-1))
+./step/utils/Quaternions.py:454:        return (q2s * (q1s * q0s)) if world else (q0s * (q1s * q2s))
+./step/utils/Quaternions.py:498:        return cls(qs)
+./step/utils/processor.py:55:            return (modified_grad_out,)
+./step/utils/processor.py:86:    #         return (modified_grad_out,)
+./step/utils/processor.py:116:        return gradients_as_arr
+./step/utils/processor.py:139:            return
+./step/utils/processor.py:150:    return int(best_model[5:all_us[0]]), float(best_model[all_us[0]+4:all_us[1]])
+./step/utils/processor.py:215:    return labels_out
+./step/utils/processor.py:226:    return aps, mean_ap, f1_score
+./step/utils/processor.py:514:        return np.abs(preds) / np.linalg.norm(preds, ord=1, axis=-1)[:, None]
+./step/utils/processor.py:556:        return features
+./step/utils/common.py:9:    return Variable(x, volatile=volatile)
+./step/utils/common.py:17:    return labels_out
+./step/utils/common.py:22:    return vector / np.linalg.norm(vector)
+./step/utils/common.py:30:    return np.arccos(np.clip(np.dot(v1_u, v2_u), -1.0, 1.0))
+./step/utils/common.py:38:    return np.arccos(np.clip(np.dot(u1, u2), -1.0, 1.0))
+./step/utils/common.py:44:    return np.linalg.norm(v1-v2)
+./step/utils/common.py:52:    return np.sqrt(s * (s-a) * (s-b) * (s-c))
+./step/utils/common.py:73:    return root, spine, neck, head, rshoulder, relbow, rhand,\
+./step/utils/common.py:79:    return np.append(vel, np.linalg.norm(vel))
+./step/utils/common.py:83:    return vel_curr - vel_prev
+./step/utils/common.py:87:    return np.linalg.norm(acc_curr - acc_prev)
+./step/utils/common.py:94:        return np.concatenate((vel_curr, acc_curr))
+./step/utils/common.py:96:    return np.concatenate((vel_curr, acc_curr, [jerk]))
+./step/utils/common.py:235:    return affective_features
+./step/utils/common.py:282:            return R, c, t
+./step/utils/common.py:288:    return R, c, t
+./step/utils/loader.py:55:    return train_test_split(poses, differentials, affective_features, num_frames, labels, test_size=0.1)
+./step/utils/loader.py:117:    return labels, num_annotators
+./step/utils/loader.py:140:    return data, labels, train_test_split(data, labels, test_size=0.1)
+./step/utils/loader.py:152:    return np.concatenate((c_idx[0], np.repeat(c_idx[1], 1), np.repeat(c_idx[2], 2), np.repeat(c_idx[3], 4)), axis=0)
+./step/utils/loader.py:166:    return affective_features
+./step/utils/loader.py:194:    return (_data - data_mean) / data_std, data_mean, data_std
+./step/utils/loader.py:210:    return data_normalized, data_mean, data_std
+./step/utils/loader.py:219:    return (_data - data_min) / (data_max - data_min), data_max, data_min
+./step/utils/loader.py:237:    return data_scaled, max_per_joint, min_per_joint
+./step/utils/loader.py:243:    return data_descaled
+./step/utils/loader.py:248:    return np.eye(num_classes, dtype='uint8')[y]
+./step/utils/loader.py:256:    return labels_out
+./step/utils/loader.py:287:        return self.data.shape[0]
+./step/utils/loader.py:318:        return data, poses, differentials, affs, num_frames, labels_list
+./step/net/classifier.py:90:        return x, f
+./step/net/classifier.py:114:        return output, feature
+./step/net/classifier.py:192:        return self.relu(x), A
+./step/net/utils/graph.py:38:        return self.A
+./step/net/utils/graph.py:121:    return hop_dis
+./step/net/utils/graph.py:132:    return AD
+./step/net/utils/graph.py:143:    return DAD
+./step/net/utils/tgcn.py:67:        return x.contiguous(), A
+./step/net/utils/tgcn.py:130:        return x.contiguous(), A
+./data.py:23:    return train_test_split(joints, bones, labels, test_size=0.1, shuffle=True, random_state=420)
+./data.py:42:        return val_loader
+./evaluate.py:43:    return labels_out
+./evaluate.py:57:    return ap, mean_ap, np.mean(f1_score)
+./lstm/torchlight/torchlight/io.py:55:        return model
+./lstm/torchlight/torchlight/io.py:90:        return model
+./lstm/torchlight/torchlight/io.py:141:        return self.cur_time
+./lstm/torchlight/torchlight/io.py:146:        return split_time
+./lstm/torchlight/torchlight/io.py:162:        return True
+./lstm/torchlight/torchlight/io.py:164:        return False
+./lstm/torchlight/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./lstm/torchlight/torchlight/io.py:178:    return mod
+./lstm/torchlight/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+./lstm/torchlight/torchlight/gpu.py:11:        return a list of new gpus ids
+./lstm/torchlight/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./lstm/torchlight/torchlight/gpu.py:23:    return len(gpus)
+./lstm/torchlight/build/lib/torchlight/io.py:55:        return model
+./lstm/torchlight/build/lib/torchlight/io.py:90:        return model
+./lstm/torchlight/build/lib/torchlight/io.py:141:        return self.cur_time
+./lstm/torchlight/build/lib/torchlight/io.py:146:        return split_time
+./lstm/torchlight/build/lib/torchlight/io.py:162:        return True
+./lstm/torchlight/build/lib/torchlight/io.py:164:        return False
+./lstm/torchlight/build/lib/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./lstm/torchlight/build/lib/torchlight/io.py:178:    return mod
+./lstm/torchlight/build/lib/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+./lstm/torchlight/build/lib/torchlight/gpu.py:11:        return a list of new gpus ids
+./lstm/torchlight/build/lib/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./lstm/torchlight/build/lib/torchlight/gpu.py:23:    return len(gpus)
+./lstm/utils/Quaternions.py:29:            return
+./lstm/utils/Quaternions.py:33:            return
+./lstm/utils/Quaternions.py:38:        return "Quaternions(" + str(self.qs) + ")"
+./lstm/utils/Quaternions.py:41:        return "Quaternions(" + repr(self.qs) + ")"
+./lstm/utils/Quaternions.py:48:        if isinstance(oqs, float): return sqs, oqs * np.ones(sqs.shape[:-1])
+./lstm/utils/Quaternions.py:56:        if np.all(ss == os): return sqs, oqs
+./lstm/utils/Quaternions.py:66:        return sqsn, oqsn
+./lstm/utils/Quaternions.py:71:        return self * other
+./lstm/utils/Quaternions.py:74:        return self / other
+./lstm/utils/Quaternions.py:117:            return Quaternions(qs)
+./lstm/utils/Quaternions.py:122:            return (self * (vs * -self)).imaginaries
+./lstm/utils/Quaternions.py:126:            return Quaternions.slerp(Quaternions.id_like(self), self, other)
+./lstm/utils/Quaternions.py:140:        if isinstance(other, Quaternions): return self * (-other)
+./lstm/utils/Quaternions.py:141:        if isinstance(other, np.ndarray): return self * (1.0 / other)
+./lstm/utils/Quaternions.py:142:        if isinstance(other, float): return self * (1.0 / other)
+./lstm/utils/Quaternions.py:146:        return self.qs == other.qs
+./lstm/utils/Quaternions.py:149:        return self.qs != other.qs
+./lstm/utils/Quaternions.py:153:        return Quaternions(self.qs * np.array([[1, -1, -1, -1]]))
+./lstm/utils/Quaternions.py:161:        return qabs
+./lstm/utils/Quaternions.py:164:        return iter(self.qs)
+./lstm/utils/Quaternions.py:167:        return len(self.qs)
+./lstm/utils/Quaternions.py:170:        return Quaternions(self.qs[k])
+./lstm/utils/Quaternions.py:177:        return np.sum(self.qs ** 2.0, axis=-1) ** 0.5
+./lstm/utils/Quaternions.py:181:        return self.qs[..., 0]
+./lstm/utils/Quaternions.py:185:        return self.qs[..., 1:4]
+./lstm/utils/Quaternions.py:189:        return self.qs.shape[:-1]
+./lstm/utils/Quaternions.py:192:        return Quaternions(self.qs.repeat(n, **kwargs))
+./lstm/utils/Quaternions.py:195:        return Quaternions(self.qs / self.lengths[..., np.newaxis])
+./lstm/utils/Quaternions.py:202:        return imgs * lens[..., np.newaxis]
+./lstm/utils/Quaternions.py:219:        return ret
+./lstm/utils/Quaternions.py:222:        return self.constrained(np.array([1, 0, 0]))
+./lstm/utils/Quaternions.py:225:        return self.constrained(np.array([0, 1, 0]))
+./lstm/utils/Quaternions.py:228:        return self.constrained(np.array([0, 0, 1]))
+./lstm/utils/Quaternions.py:231:        return np.sum(self.qs * q.qs, axis=-1)
+./lstm/utils/Quaternions.py:234:        return Quaternions(np.copy(self.qs))
+./lstm/utils/Quaternions.py:238:        return self
+./lstm/utils/Quaternions.py:241:        return Quaternions.exp(np.average(abs(self).log, axis=0, weights=ws))
+./lstm/utils/Quaternions.py:300:        return es
+./lstm/utils/Quaternions.py:310:            return Quaternions(v[:, np.argmin((1. - qiT_dot_qref ** 2).sum(axis=0))])
+./lstm/utils/Quaternions.py:325:        return angles, axis
+./lstm/utils/Quaternions.py:358:        return m
+./lstm/utils/Quaternions.py:361:        return self.qs.ravel()
+./lstm/utils/Quaternions.py:369:            return Quaternions(qs)
+./lstm/utils/Quaternions.py:374:            return Quaternions(qs)
+./lstm/utils/Quaternions.py:382:        return Quaternions(qs)
+./lstm/utils/Quaternions.py:397:        return Quaternions(qs).normalized()
+./lstm/utils/Quaternions.py:424:        return Quaternions(
+./lstm/utils/Quaternions.py:432:        return Quaternions(np.concatenate([w[..., np.newaxis], a], axis=-1)).normalized()
+./lstm/utils/Quaternions.py:439:        return Quaternions(np.concatenate([cosines, axis * sines], axis=-1))
+./lstm/utils/Quaternions.py:454:        return (q2s * (q1s * q0s)) if world else (q0s * (q1s * q2s))
+./lstm/utils/Quaternions.py:498:        return cls(qs)
+./lstm/utils/processor.py:55:            return (modified_grad_out,)
+./lstm/utils/processor.py:86:    #         return (modified_grad_out,)
+./lstm/utils/processor.py:116:        return gradients_as_arr
+./lstm/utils/processor.py:139:            return
+./lstm/utils/processor.py:150:    return int(best_model[5:all_us[0]]), float(best_model[all_us[0]+4:all_us[1]])
+./lstm/utils/processor.py:215:    return labels_out
+./lstm/utils/processor.py:226:    return aps, mean_ap, f1_score
+./lstm/utils/processor.py:515:        return np.abs(preds) / np.linalg.norm(preds, ord=1, axis=-1)[:, None]
+./lstm/utils/processor.py:557:        return features
+./lstm/utils/common.py:9:    return Variable(x, volatile=volatile)
+./lstm/utils/common.py:17:    return labels_out
+./lstm/utils/common.py:22:    return vector / np.linalg.norm(vector)
+./lstm/utils/common.py:30:    return np.arccos(np.clip(np.dot(v1_u, v2_u), -1.0, 1.0))
+./lstm/utils/common.py:38:    return np.arccos(np.clip(np.dot(u1, u2), -1.0, 1.0))
+./lstm/utils/common.py:44:    return np.linalg.norm(v1-v2)
+./lstm/utils/common.py:52:    return np.sqrt(s * (s-a) * (s-b) * (s-c))
+./lstm/utils/common.py:73:    return root, spine, neck, head, rshoulder, relbow, rhand,\
+./lstm/utils/common.py:79:    return np.append(vel, np.linalg.norm(vel))
+./lstm/utils/common.py:83:    return vel_curr - vel_prev
+./lstm/utils/common.py:87:    return np.linalg.norm(acc_curr - acc_prev)
+./lstm/utils/common.py:94:        return np.concatenate((vel_curr, acc_curr))
+./lstm/utils/common.py:96:    return np.concatenate((vel_curr, acc_curr, [jerk]))
+./lstm/utils/common.py:235:    return affective_features
+./lstm/utils/common.py:282:            return R, c, t
+./lstm/utils/common.py:288:    return R, c, t
+./lstm/utils/loader.py:55:    return train_test_split(poses, differentials, affective_features, num_frames, labels, test_size=0.1)
+./lstm/utils/loader.py:117:    return labels, num_annotators
+./lstm/utils/loader.py:140:    return data, labels, train_test_split(data, labels, test_size=0.1)
+./lstm/utils/loader.py:152:    return np.concatenate((c_idx[0], np.repeat(c_idx[1], 1), np.repeat(c_idx[2], 2), np.repeat(c_idx[3], 4)), axis=0)
+./lstm/utils/loader.py:166:    return affective_features
+./lstm/utils/loader.py:194:    return (_data - data_mean) / data_std, data_mean, data_std
+./lstm/utils/loader.py:210:    return data_normalized, data_mean, data_std
+./lstm/utils/loader.py:219:    return (_data - data_min) / (data_max - data_min), data_max, data_min
+./lstm/utils/loader.py:237:    return data_scaled, max_per_joint, min_per_joint
+./lstm/utils/loader.py:243:    return data_descaled
+./lstm/utils/loader.py:248:    return np.eye(num_classes, dtype='uint8')[y]
+./lstm/utils/loader.py:256:    return labels_out
+./lstm/utils/loader.py:287:        return self.data.shape[0]
+./lstm/utils/loader.py:318:        return data, poses, differentials, affs, num_frames, labels_list
+./lstm/net/classifier.py:72:        return x, f
+./lstm/net/classifier.py:150:        return self.relu(x), A
+./lstm/net/utils/graph.py:38:        return self.A
+./lstm/net/utils/graph.py:121:    return hop_dis
+./lstm/net/utils/graph.py:132:    return AD
+./lstm/net/utils/graph.py:143:    return DAD
+./lstm/net/utils/tgcn.py:67:        return x.contiguous(), A
+./lstm/net/utils/tgcn.py:130:        return x.contiguous(), A
+./taew_net/torchlight/torchlight/io.py:55:        return model
+./taew_net/torchlight/torchlight/io.py:90:        return model
+./taew_net/torchlight/torchlight/io.py:141:        return self.cur_time
+./taew_net/torchlight/torchlight/io.py:146:        return split_time
+./taew_net/torchlight/torchlight/io.py:162:        return True
+./taew_net/torchlight/torchlight/io.py:164:        return False
+./taew_net/torchlight/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./taew_net/torchlight/torchlight/io.py:178:    return mod
+./taew_net/torchlight/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+Binary file ./taew_net/torchlight/torchlight/__pycache__/gpu.cpython-38.pyc matches
+./taew_net/torchlight/torchlight/gpu.py:11:        return a list of new gpus ids
+./taew_net/torchlight/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./taew_net/torchlight/torchlight/gpu.py:23:    return len(gpus)
+./taew_net/torchlight/build/lib/torchlight/io.py:55:        return model
+./taew_net/torchlight/build/lib/torchlight/io.py:90:        return model
+./taew_net/torchlight/build/lib/torchlight/io.py:141:        return self.cur_time
+./taew_net/torchlight/build/lib/torchlight/io.py:146:        return split_time
+./taew_net/torchlight/build/lib/torchlight/io.py:162:        return True
+./taew_net/torchlight/build/lib/torchlight/io.py:164:        return False
+./taew_net/torchlight/build/lib/torchlight/io.py:170:    return eval('dict({})'.format(v))  #pylint: disable=W0123
+./taew_net/torchlight/build/lib/torchlight/io.py:178:    return mod
+./taew_net/torchlight/build/lib/torchlight/io.py:185:        return getattr(sys.modules[mod_str], class_str)
+./taew_net/torchlight/build/lib/torchlight/gpu.py:11:        return a list of new gpus ids
+./taew_net/torchlight/build/lib/torchlight/gpu.py:15:    return list(range(len(gpus)))
+./taew_net/torchlight/build/lib/torchlight/gpu.py:23:    return len(gpus)
+Binary file ./taew_net/utils/__pycache__/common.cpython-38.pyc matches
+./taew_net/utils/visualizations.py:66:    return _lines
+./taew_net/utils/losses.py:16:    return torch.mean(torch.abs(angle_distance))
+./taew_net/utils/losses.py:29:    return lambda_cls * loss
+./taew_net/utils/Quaternions.py:28:            return
+./taew_net/utils/Quaternions.py:32:            return
+./taew_net/utils/Quaternions.py:36:    def __str__(self): return "Quaternions("+ str(self.qs) + ")"
+./taew_net/utils/Quaternions.py:37:    def __repr__(self): return "Quaternions("+ repr(self.qs) + ")"
+./taew_net/utils/Quaternions.py:44:        if isinstance(oqs, float): return sqs, oqs * np.ones(sqs.shape[:-1])
+./taew_net/utils/Quaternions.py:52:        if np.all(ss == os): return sqs, oqs
+./taew_net/utils/Quaternions.py:62:        return sqsn, oqsn
+./taew_net/utils/Quaternions.py:66:    def __add__(self, other): return self * other
+./taew_net/utils/Quaternions.py:67:    def __sub__(self, other): return self / other
+./taew_net/utils/Quaternions.py:107:            return Quaternions(qs)
+./taew_net/utils/Quaternions.py:112:            return (self * (vs * -self)).imaginaries
+./taew_net/utils/Quaternions.py:116:            return Quaternions.slerp(Quaternions.id_like(self), self, other)
+./taew_net/utils/Quaternions.py:130:        if isinstance(other, Quaternions): return self * (-other)
+./taew_net/utils/Quaternions.py:131:        if isinstance(other, np.ndarray): return self * (1.0 / other)
+./taew_net/utils/Quaternions.py:132:        if isinstance(other, float): return self * (1.0 / other)
+./taew_net/utils/Quaternions.py:135:    def __eq__(self, other): return self.qs == other.qs
+./taew_net/utils/Quaternions.py:136:    def __ne__(self, other): return self.qs != other.qs
+./taew_net/utils/Quaternions.py:140:        return Quaternions(self.qs * np.array([[1, -1, -1, -1]]))
+./taew_net/utils/Quaternions.py:148:        return qabs
+./taew_net/utils/Quaternions.py:150:    def __iter__(self): return iter(self.qs)
+./taew_net/utils/Quaternions.py:151:    def __len__(self): return len(self.qs)
+./taew_net/utils/Quaternions.py:153:    def __getitem__(self, k):    return Quaternions(self.qs[k]) 
+./taew_net/utils/Quaternions.py:158:        return np.sum(self.qs**2.0, axis=-1)**0.5
+./taew_net/utils/Quaternions.py:162:        return self.qs[...,0]
+./taew_net/utils/Quaternions.py:166:        return self.qs[...,1:4]
+./taew_net/utils/Quaternions.py:169:    def shape(self): return self.qs.shape[:-1]
+./taew_net/utils/Quaternions.py:172:        return Quaternions(self.qs.repeat(n, **kwargs))
+./taew_net/utils/Quaternions.py:175:        return Quaternions(self.qs / self.lengths[...,np.newaxis])
+./taew_net/utils/Quaternions.py:182:        return imgs * lens[...,np.newaxis]
+./taew_net/utils/Quaternions.py:199:        return ret
+./taew_net/utils/Quaternions.py:201:    def constrained_x(self): return self.constrained(np.array([1,0,0]))
+./taew_net/utils/Quaternions.py:202:    def constrained_y(self): return self.constrained(np.array([0,1,0]))
+./taew_net/utils/Quaternions.py:203:    def constrained_z(self): return self.constrained(np.array([0,0,1]))
+./taew_net/utils/Quaternions.py:205:    def dot(self, q): return np.sum(self.qs * q.qs, axis=-1)
+./taew_net/utils/Quaternions.py:207:    def copy(self): return Quaternions(np.copy(self.qs))
+./taew_net/utils/Quaternions.py:211:        return self
+./taew_net/utils/Quaternions.py:214:        return Quaternions.exp(np.average(abs(self).log, axis=0, weights=ws))
+./taew_net/utils/Quaternions.py:273:        return es
+./taew_net/utils/Quaternions.py:284:            return Quaternions(v[:,np.argmin((1.-qiT_dot_qref**2).sum(axis=0))])            
+./taew_net/utils/Quaternions.py:299:        return angles, axis
+./taew_net/utils/Quaternions.py:325:        return m
+./taew_net/utils/Quaternions.py:328:        return self.qs.ravel()
+./taew_net/utils/Quaternions.py:336:            return Quaternions(qs)
+./taew_net/utils/Quaternions.py:341:            return Quaternions(qs)
+./taew_net/utils/Quaternions.py:349:        return Quaternions(qs)
+./taew_net/utils/Quaternions.py:364:        return Quaternions(qs).normalized()
+./taew_net/utils/Quaternions.py:391:        return Quaternions(
+./taew_net/utils/Quaternions.py:399:        return Quaternions(np.concatenate([w[...,np.newaxis], a], axis=-1)).normalized()
+./taew_net/utils/Quaternions.py:406:        return Quaternions(np.concatenate([cosines, axis * sines], axis=-1))
+./taew_net/utils/Quaternions.py:421:        return (q2s * (q1s * q0s)) if world else (q0s * (q1s * q2s))
+./taew_net/utils/Quaternions.py:465:        return cls(qs)
+./taew_net/utils/processor.py:96:    return np.nan_to_num(best_ap), best_mean_ap, np.mean(np.max(f1_scores, axis=0)), np.max(acc)
+./taew_net/utils/processor.py:109:    return rec + pen + aff_loss + classifier_loss
+./taew_net/utils/processor.py:117:            return
+./taew_net/utils/processor.py:125:        return 0, np.inf
+./taew_net/utils/processor.py:139:    # return model name, best loss, best acc
+./taew_net/utils/processor.py:140:    return best_model, int(best_model[all_underscores[0] + 1:all_underscores[1]]),\
+./taew_net/utils/processor.py:228:        return data, poses, diffs, affs
+./taew_net/utils/common.py:33:    return chance_agreement, actual_above_chance, max_above_chance, kappa
+./taew_net/utils/common.py:68:    return labels_out
+./taew_net/utils/common.py:74:    return Variable(x, volatile=volatile)
+./taew_net/utils/common.py:79:    return vector / np.linalg.norm(vector)
+./taew_net/utils/common.py:87:    return np.arccos(np.clip(np.dot(v1_u, v2_u), -1.0, 1.0))
+./taew_net/utils/common.py:95:    return np.arccos(np.clip(np.dot(u1, u2), -1.0, 1.0))
+./taew_net/utils/common.py:101:    return np.linalg.norm(v1 - v2)
+./taew_net/utils/common.py:109:    return np.sqrt(np.abs(s * (s - a) * (s - b) * (s - c)))
+./taew_net/utils/common.py:130:        return root, spine, neck, head, \
+./taew_net/utils/common.py:157:        return root, left_hip, left_knee, left_heel, left_toe, \
+./taew_net/utils/common.py:176:    return np.array([[aa + bb - cc - dd, 2 * (bc + ad), 2 * (bd - ac)],
+./taew_net/utils/common.py:187:    return np.nan_to_num(points_rotated.transpose().flatten())
+./taew_net/utils/common.py:199:    # return np.nan_to_num(axis_normalized * theta[:, None]), axis_normalized, theta
+./taew_net/utils/common.py:200:    return axis, np.nan_to_num(theta)
+./taew_net/utils/common.py:212:    # return np.append(del_pos, del_orientation, axis=1).flatten()
+./taew_net/utils/common.py:213:    return quats.flatten(), del_pos.flatten()
+./taew_net/utils/common.py:218:    return np.append(vel, np.linalg.norm(vel))
+./taew_net/utils/common.py:222:    return vel_curr - vel_prev
+./taew_net/utils/common.py:226:    return np.linalg.norm(acc_curr - acc_prev)
+./taew_net/utils/common.py:232:        return vel_curr
+./taew_net/utils/common.py:235:        return np.concatenate((vel_curr, acc_curr))
+./taew_net/utils/common.py:237:    return np.concatenate((vel_curr, [jerk]))
+./taew_net/utils/common.py:333:    return np.nan_to_num(affective_features)
+./taew_net/utils/common.py:388:    return np.nan_to_num(affective_features)
+./taew_net/utils/common.py:394:    return vel_idx, acc_idx
+./taew_net/utils/common.py:426:    return poses, differentials, affective_features
+./taew_net/utils/common.py:452:    return poses, rotations, translations, affective_features
+./taew_net/utils/common.py:483:    return joints, rotations, translations
+./taew_net/utils/common.py:509:    return gait
+./taew_net/utils/common.py:553:            return R, c, t
+./taew_net/utils/common.py:559:    return R, c, t
+./taew_net/utils/common.py:564:    Fit sin to the input time sequence, and return fitting parameters
+./taew_net/utils/common.py:576:    def sinfunc(t, A, w, p, c):  return A * np.sin(w * t + p) + c
+./taew_net/utils/common.py:582:    return {"amp": A, "omega": w, "phase": p, "offset": c, "freq": f, "period": 1. / f, "fitfunc": fitfunc,
+./taew_net/utils/loader.py:53:    return train_test_split(poses, differentials, affective_features, num_frames, labels, test_size=0.1)
+./taew_net/utils/loader.py:112:    return labels, num_annotators
+./taew_net/utils/loader.py:174:    return train_test_split(data, poses, rotations, translations,
+./taew_net/utils/loader.py:188:    return np.concatenate((np.repeat(c_idx[1], 2), np.repeat(c_idx[1], 2),
+./taew_net/utils/loader.py:203:    return affective_features
+./taew_net/utils/loader.py:231:    return (_data - data_mean) / data_std, data_mean, data_std
+./taew_net/utils/loader.py:247:    return data_normalized, data_mean, data_std
+./taew_net/utils/loader.py:256:    return (_data - data_min) / (data_max - data_min), data_max, data_min
+./taew_net/utils/loader.py:274:    return data_scaled, max_per_joint, min_per_joint
+./taew_net/utils/loader.py:280:    return data_descaled
+./taew_net/utils/loader.py:285:    return np.eye(num_classes, dtype='uint8')[y]
+./taew_net/utils/loader.py:320:        return self.data.shape[0]
+./taew_net/utils/loader.py:346:        return data, poses, rotations, affs, num_frames, labels_list
+./taew_net/utils/Quaternions_torch.py:32:    return torch.stack((w, x, y, z), dim=1).view(original_shape)
+./taew_net/utils/Quaternions_torch.py:53:    return (v + 2 * (q[:, :1] * uv + uuv)).view(original_shape)
+./taew_net/utils/Quaternions_torch.py:100:    return torch.stack((x, y, z), dim=1).view(original_shape)
+./taew_net/utils/Quaternions_torch.py:108:    return qmul(q, r).numpy()
+./taew_net/utils/Quaternions_torch.py:114:    return qrot(q, v).numpy()
+./taew_net/utils/Quaternions_torch.py:120:        return qeuler(q, order, epsilon).cpu().numpy()
+./taew_net/utils/Quaternions_torch.py:123:        return qeuler(q, order, epsilon).numpy()
+./taew_net/utils/Quaternions_torch.py:143:    return result
+./taew_net/utils/Quaternions_torch.py:162:    return np.concatenate((w, xyz), axis=1).reshape(original_shape)
+./taew_net/utils/Quaternions_torch.py:203:    return result.reshape(original_shape)
+./taew_net/net/hap.py:37:        return labels_pred, x_recons, x_recons_pre_norm, affs_pred, h_enc, h_dec1, h_dec
+./taew_net/net/hap.py:46:        return recon_x
+./taew_net/net/hap.py:124:        return x_diffs_list
+./taew_net/net/hap.py:207:        return affs_pred.permute(0, 2, 1), labels_pred, h
+./taew_net/net/hap.py:266:        return x_diffs.unsqueeze(1)
+./taew_net/net/hap.py:382:        return x_diffs_out, h1, h, x_diffs_pre_norm
+./taew_net/net/utils/graph.py:38:        return self.A
+./taew_net/net/utils/graph.py:115:    return hop_dis
+./taew_net/net/utils/graph.py:126:    return AD
+./taew_net/net/utils/graph.py:137:    return DAD
+./taew_net/net/utils/tgcn.py:67:        return x.contiguous(), A
+./taew_net/net/utils/tgcn.py:130:        return x.contiguous(), A
+./models/model_loader.py:17:    return model
+./models/model_loader.py:28:    return model
+./models/model_loader.py:43:#     return model
+./models/stgcn/st_gcn.py:95:        return x
+./models/stgcn/st_gcn.py:119:        return output, feature
+./models/stgcn/st_gcn.py:199:        return self.relu(x), A
+./models/stgcn/st_gcn_twostream.py:26:        return res
+./models/stgcn/tgcn.py:64:        return x.contiguous(), A
+./models/stgcn/stgcn_graph.py:38:        return self.A
+./models/stgcn/stgcn_graph.py:116:    return hop_dis
+./models/stgcn/stgcn_graph.py:127:    return AD
+./models/stgcn/stgcn_graph.py:138:    return DAD
+./models/dgnn/dgnn_graph.py:36:    return graph
+./models/dgnn/dgnn_graph.py:55:    return (inv_degree_mat @ im)
+./models/dgnn/dgnn_graph.py:70:    return source_graph, target_graph
+./models/dgnn/dgnn_graph.py:77:    return graph
+./models/dgnn/dgnn_old.py:14:    return mod
+./models/dgnn/dgnn_old.py:46:        return x
+./models/dgnn/dgnn_old.py:56:        return self.tempconv(fv), self.tempconv(fe)
+./models/dgnn/dgnn_old.py:104:        return fvp, fep
+./models/dgnn/dgnn_old.py:127:        return self.relu(fv), self.relu(fe)
+./models/dgnn/dgnn_old.py:163:            return sum(p.numel() for p in m.parameters() if p.requires_grad)
+./models/dgnn/dgnn_old.py:204:        return self.fc(out)
+./models/dgnn/dgnn.py:38:        return x
+./models/dgnn/dgnn.py:48:        return self.tempconv(fv), self.tempconv(fe)
+./models/dgnn/dgnn.py:96:        return fvp, fep
+./models/dgnn/dgnn.py:119:        return self.relu(fv), self.relu(fe)
+./models/dgnn/dgnn.py:151:            return sum(p.numel() for p in m.parameters() if p.requires_grad)
+./models/dgnn/dgnn.py:193:        return self.fc(out)

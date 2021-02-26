@@ -426,6 +426,7 @@ def get_ewalk_differentials_with_padding(gaits, num_frames, coords):
     return poses, differentials, affective_features
 
 
+# wsx
 def get_edin_differentials_with_padding(gaits, num_frames, coords):
     dataset = 'edin'
     affs_dim = 18
@@ -433,10 +434,13 @@ def get_edin_differentials_with_padding(gaits, num_frames, coords):
     num_frames_max = gaits.shape[1]
     num_coords = gaits.shape[2]
     num_joints = int(num_coords / coords)
+    
+    # wsx
     poses = np.zeros((num_samples, num_coords))
     rotations = np.zeros((num_samples, num_frames_max, num_joints * 4))
     translations = np.zeros((num_samples, num_frames_max, num_joints * 3))
     affective_features = np.zeros((num_samples, num_frames_max, affs_dim))
+
     for sidx in range(num_samples):
         for tidx in range(int(num_frames[sidx])):
             affective_features[sidx, tidx, :] = \
