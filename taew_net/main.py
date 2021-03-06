@@ -23,7 +23,9 @@ elif dataset == 'edin':
 num_labels = [4, 3, 3]
 
 deep_dim = 14
+# note  ?
 upsample = 1
+# note ?
 model_data_path = os.path.join(base_path, '../weights')
 
 
@@ -95,10 +97,17 @@ elif dataset == 'edin':
      translations_train, translations_test, affective_features_train, affective_features_test,
      num_frames_train, num_frames_test, labels_train, labels_test], label_weights =\
         loader.load_edin_data(data_path, coords, num_joints, num_labels, frame_drop=args.frame_drop)
+#note: two parts: [],label_weights 
+
 diffs_dim = int(rotations_train.shape[-1] / num_joints)
+#note   four different dims for joint rotation?
+print("log  rotations_train.shape:",rotations_train.shape)
+#rotations_train.shape: (3157, 48, 84)
 affs_dim = affective_features_train.shape[-1] + deep_dim
+print("log  affective_features_train.shape",affective_features_train.shape)
 affective_features = np.concatenate((affective_features_train, affective_features_test), axis=0)
 affective_features, affs_max, affs_min = loader.scale_data(affective_features)
+print("log  affective_features:",affective_features.shape)
 affective_features_train, _, _ = loader.scale_data(affective_features_train, affs_max, affs_min)
 affective_features_test, _, _ = loader.scale_data(affective_features_test, affs_max, affs_min)
 num_frames_max = rotations_train.shape[1]

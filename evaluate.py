@@ -80,6 +80,7 @@ def eval(model, loader, use_bones=False, taew=False):
             loss = criterion(pred, label)
             ap, map, f1 = calculate_metrics(label.detach().cpu().numpy(), pred.detach().cpu().numpy())
 
+    print("log: eval()")
     print("loss: ", loss.item(), "ap: ", ap, " map: ", map, " f1: ", f1)
 
 
@@ -87,6 +88,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # dataset
+    print("log: evaluation.py __main__ enter")
     print("Loading data...")
 
     if args.stgcn:

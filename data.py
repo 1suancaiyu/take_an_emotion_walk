@@ -13,12 +13,18 @@ def load_data(data_path, frame_drop=5):
     # frame drop
     joints = joints[:, ::frame_drop, :]
     bones = bones[:, ::frame_drop, :]
+    # ::num every num element
+    print("log: joints frame drop joints.shape\t",joints.shape,"\n")
+    print("log: bones frame drop bones.shape\t",bones.shape,'\n')
 
     # reshape
     joints = joints.reshape(joints.shape[0], joints.shape[1], 21, 3)
+    print("log: joints reshape joints.shape\t",joints.shape,'\n')
+    # make the joints and bones the same stracture
 
     labels = npzfile['labels']
     labels = labels / np.linalg.norm(labels, ord=1, axis=1)[:, None]
+    print("log: labels norm \t",labels.shape,'\n')
 
     return train_test_split(joints, bones, labels, test_size=0.1, shuffle=True, random_state=420)
 
