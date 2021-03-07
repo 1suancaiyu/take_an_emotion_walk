@@ -11,6 +11,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 base_path = os.path.dirname(os.path.realpath(__file__))
+print("log: main.py base_patch", base_path, '\n')
+# get the ../ directory
 data_path = os.path.join(base_path, '../datasets')
 dataset = 'edin'
 coords = 3
