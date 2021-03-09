@@ -102,11 +102,16 @@ elif dataset == 'edin':
 #note: two parts: [],label_weights 
 
 diffs_dim = int(rotations_train.shape[-1] / num_joints)
-#note   four different dims for joint rotation?
 print("log  rotations_train.shape:",rotations_train.shape)
-#rotations_train.shape: (3157, 48, 84)
+# rotations_train.shape: (3157, 48, 84)
+# num_joints = 21   diffs_dim = 4
+# note   four different dims for joint rotation? yes , 四元数， 一个四维向量表示三维旋转
+
 affs_dim = affective_features_train.shape[-1] + deep_dim
 print("log  affective_features_train.shape",affective_features_train.shape)
+#affective_features_train.shape (3157, 48, 18)
+# affs_dim = 18 + 14 = 32
+
 affective_features = np.concatenate((affective_features_train, affective_features_test), axis=0)
 affective_features, affs_max, affs_min = loader.scale_data(affective_features)
 print("log  affective_features:",affective_features.shape)

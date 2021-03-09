@@ -16,11 +16,15 @@ from utils.visualizations import display_animations
 from utils import loader
 from utils import losses
 from utils.common import *
+# wsx visdom
+from visdom import Visdom
+viz = Visdom(env='taew')
+viz.line([0.], [0.], win='train_loss', opts=dict(title='train loss'))
+                
 
 torch.manual_seed(1234)
 
 rec_loss = losses.quat_angle_loss
-
 
 def h5_to_csv(h5file, csv_save_path):
     f = h5py.File(h5file, 'r')
@@ -243,6 +247,7 @@ class Processor(object):
         self.tr = self.tr * self.args.tr_decay
 
     def show_epoch_info(self, show_best=True):
+        print("log: processor.py show_epoch_info()")
 
         print_epochs = [self.best_loss_epoch if self.best_loss_epoch is not None else 0,
                         self.best_acc_epoch if self.best_acc_epoch is not None else 0,
@@ -251,11 +256,26 @@ class Processor(object):
         i = 0
         for k, v in self.epoch_info.items():
             if show_best:
+                print("log: show_best")
+                print('log: k:',k)
+                print('log: v:',v)
                 self.io.print_log('\t{}: {}. Best so far: {} (epoch: {:d}).'.
                                   format(k, v, best_metrics[i], print_epochs[i]))
+
+                # wsx: visdom
+                if(k== 'mean_mean_ap'):
+                    viz.line([v.item()], 
+                            [self.args.num_epoch], 
+                            win='train_loss', 
+                            update='append')
+                #viz.line([0.], [0.], win='train_loss', opts=dict(title='train loss'))
+                #viz.line([loss.item()], [self.args.num_epoch], win='train_loss', update='append')
+                #plotter.plot('self.best_loss_epoch', 'val', 'taew', self.args.num_epoch)
             else:
+                print("log: self.io.print_log('\t{}: {}.'.format(k, v))")
                 self.io.print_log('\t{}: {}.'.format(k, v))
             i += 1
+            print("log: i ",i)
         if self.args.pavi_log:
             self.io.log('train', self.meta_info['iter'], self.epoch_info)
 
@@ -319,6 +339,7 @@ class Processor(object):
             self.show_iter_info()
             self.meta_info['iter'] += 1
 
+        # wsx mark
         self.epoch_info['mean_loss'] = np.mean(loss_value)
         self.epoch_info['mean_aps'] = np.mean(ap_values, axis=0)
         self.epoch_info['mean_mean_ap'] = np.mean(mean_ap_value)

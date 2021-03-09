@@ -1,0 +1,18 @@
+log: main.py base_patch /root/take_an_emotion_walk/taew_net 
+
+wsx: load_edin_data()
+log: load_edin_labels()
+[log]: num_labels)
+ [4, 3, 3]
+[log]: np.cumsum(num_labels)
+ [ 4  7 10]
+log: label_partitions (4,)
+log  rotations_train.shape: (3157, 48, 84)
+log  affective_features_train.shape (3157, 48, 18)
+log  affective_features: (3508, 48, 18)
+[03.07.21|07:21:38] 	mean_loss: 3.5034947168259394.
+[03.07.21|07:21:38] 	aps: [0.1047619  0.64764737 0.81161005 0.81113155].
+[03.07.21|07:21:38] 	mean_ap: 0.7562233704608989.
+log: evaluation.py __main__ enter
+Loading data...
+Evaluating taew

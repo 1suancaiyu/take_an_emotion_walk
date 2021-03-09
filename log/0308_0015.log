@@ -1,0 +1,1087 @@
+Exception in user code:
+------------------------------------------------------------
+log: main.py base_patch /root/take_an_emotion_walk/taew_net 
+
+wsx: load_edin_data()
+log: load_edin_labels()
+[log]: num_labels)
+ [4, 3, 3]
+[log]: np.cumsum(num_labels)
+ [ 4  7 10]
+log: label_partitions (4,)
+log  rotations_train.shape: (3157, 48, 84)
+log  affective_features_train.shape (3157, 48, 18)
+log  affective_features: (3508, 48, 18)
+[03.07.21|16:16:04] Training epoch: 0
+[03.07.21|16:16:06] 	Iter 0 Done. | loss: 6.3597 | aps: [1.    1.    0.925 0.95 ] | mean_ap: 0.9688 | f1: 0.4701 | lr: 0.001000 | tr: 1.000000
+[03.07.21|16:16:48] 	Iter 100 Done. | loss: 4.6368 | aps: [0.         1.         0.87111111 0.93055556] | mean_ap: 0.9339 | f1: 0.5324 | lr: 0.001000 | tr: 1.000000
+log: processor.py show_epoch_info()
+[03.07.21|16:17:28] 	mean_loss: 4.629574438037001. Best so far: inf (epoch: 0).
+log: i  1
+[03.07.21|16:17:28] 	mean_aps: [0.29864636 0.92431217 0.97140612 0.94872459]. Best so far: 0 (epoch: 0).
+log: i  2
+[03.07.21|16:17:28] 	mean_mean_ap: 0.963334638959916. Best so far: 0.0 (epoch: 0).
+log: i  3
+[03.07.21|16:17:28] Time consumption:
+[03.07.21|16:17:28] Done.
+[03.07.21|16:17:28] Eval epoch: 0
+log: processor.py show_epoch_info()
+[03.07.21|16:17:36] 	mean_loss: 4.5830095154898505. Best so far: 4.5830095154898505 (epoch: 0).
+log: i  1
+[03.07.21|16:17:36] 	mean_aps: [0.04761905 0.55121015 0.87146862 0.63777305]. Best so far: 0 (epoch: 0).
+log: i  2
+[03.07.21|16:17:36] 	mean_mean_ap: 0.6849756902520507. Best so far: 0.6849756902520507 (epoch: 0).
+log: i  3
+[03.07.21|16:17:36] Done.
+[03.07.21|16:17:36] Training epoch: 1
+[03.07.21|16:17:38] 	Iter 200 Done. | loss: 3.9763 | aps: [1.         1.         1.         0.91666667] | mean_ap: 0.9792 | f1: 0.5688 | lr: 0.000999 | tr: 0.995000
+[03.07.21|16:18:20] 	Iter 300 Done. | loss: 3.8057 | aps: [0.         0.96666667 1.         0.94285714] | mean_ap: 0.9698 | f1: 0.5495 | lr: 0.000999 | tr: 0.995000
+log: processor.py show_epoch_info()
+[03.07.21|16:18:59] 	mean_loss: 3.853157101548868. Best so far: 4.5830095154898505 (epoch: 0).
+log: i  1
+[03.07.21|16:18:59] 	mean_aps: [0.30329949 0.92953423 0.97352749 0.94456691]. Best so far: 0 (epoch: 0).
+log: i  2
+[03.07.21|16:18:59] 	mean_mean_ap: 0.9660055131455375. Best so far: 0.6849756902520507 (epoch: 0).
+log: i  3
+[03.07.21|16:18:59] Time consumption:
+[03.07.21|16:18:59] Done.
+[03.07.21|16:18:59] Eval epoch: 1
+Warning! Max label diff is 0.0009209811687469482
+log: processor.py show_epoch_info()
+[03.07.21|16:19:06] 	mean_loss: 3.654218900771368. Best so far: 3.654218900771368 (epoch: 1).
+log: i  1
+[03.07.21|16:19:06] 	mean_aps: [0.08690476 0.7356746  0.9265059  0.75217687]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:19:06] 	mean_mean_ap: 0.7997308490968732. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:19:06] Done.
+[03.07.21|16:19:07] Training epoch: 2
+[03.07.21|16:19:10] 	Iter 400 Done. | loss: 3.6911 | aps: [0.         0.91666667 0.98214286 0.97619048] | mean_ap: 0.9583 | f1: 0.5362 | lr: 0.000998 | tr: 0.990025
+[03.07.21|16:19:52] 	Iter 500 Done. | loss: 3.6511 | aps: [0.         1.         0.96825397 0.92666667] | mean_ap: 0.9650 | f1: 0.4473 | lr: 0.000998 | tr: 0.990025
+log: processor.py show_epoch_info()
+[03.07.21|16:20:29] 	mean_loss: 3.647193784036007. Best so far: 3.654218900771368 (epoch: 1).
+log: i  1
+[03.07.21|16:20:29] 	mean_aps: [0.33671743 0.90394912 0.96599132 0.94930637]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:20:29] 	mean_mean_ap: 0.9644711549897348. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:20:29] Time consumption:
+[03.07.21|16:20:29] Done.
+[03.07.21|16:20:29] Eval epoch: 2
+log: processor.py show_epoch_info()
+[03.07.21|16:20:36] 	mean_loss: 3.6013125010899136. Best so far: 3.6013125010899136 (epoch: 2).
+log: i  1
+[03.07.21|16:20:36] 	mean_aps: [0.16666667 0.75555556 0.8358677  0.71832011]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:20:36] 	mean_mean_ap: 0.7881818243170283. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:20:36] Done.
+[03.07.21|16:20:36] Training epoch: 3
+[03.07.21|16:20:41] 	Iter 600 Done. | loss: 3.6063 | aps: [0.   0.75 1.   1.  ] | mean_ap: 0.9167 | f1: 0.3745 | lr: 0.000997 | tr: 0.985075
+[03.07.21|16:21:23] 	Iter 700 Done. | loss: 3.6090 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.4735 | lr: 0.000997 | tr: 0.985075
+log: processor.py show_epoch_info()
+[03.07.21|16:21:59] 	mean_loss: 3.601536869397623. Best so far: 3.6013125010899136 (epoch: 2).
+log: i  1
+[03.07.21|16:21:59] 	mean_aps: [0.31125212 0.90286373 0.97354281 0.95044107]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:21:59] 	mean_mean_ap: 0.9654575541013856. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:21:59] Time consumption:
+[03.07.21|16:21:59] Done.
+[03.07.21|16:21:59] Eval epoch: 3
+log: processor.py show_epoch_info()
+[03.07.21|16:22:06] 	mean_loss: 3.570337761016119. Best so far: 3.570337761016119 (epoch: 3).
+log: i  1
+[03.07.21|16:22:06] 	mean_aps: [0.0877551  0.60379339 0.84764358 0.83568003]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:22:06] 	mean_mean_ap: 0.7920778219874732. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:22:06] Done.
+[03.07.21|16:22:06] Training epoch: 4
+[03.07.21|16:22:13] 	Iter 800 Done. | loss: 3.5845 | aps: [1.         1.         1.         0.96666667] | mean_ap: 0.9917 | f1: 0.6525 | lr: 0.000996 | tr: 0.980150
+[03.07.21|16:22:54] 	Iter 900 Done. | loss: 3.5695 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5006 | lr: 0.000996 | tr: 0.980150
+log: processor.py show_epoch_info()
+[03.07.21|16:23:29] 	mean_loss: 3.578778753425869. Best so far: 3.570337761016119 (epoch: 3).
+log: i  1
+[03.07.21|16:23:29] 	mean_aps: [0.29247039 0.92005296 0.96993362 0.95222218]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:23:29] 	mean_mean_ap: 0.9650362354443789. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:23:29] Time consumption:
+[03.07.21|16:23:29] Done.
+[03.07.21|16:23:29] Eval epoch: 4
+log: processor.py show_epoch_info()
+[03.07.21|16:23:36] 	mean_loss: 3.558650811513265. Best so far: 3.558650811513265 (epoch: 4).
+log: i  1
+[03.07.21|16:23:36] 	mean_aps: [0.0968254  0.68907957 0.8395557  0.70333244]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:23:36] 	mean_mean_ap: 0.7624372721067347. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:23:36] Done.
+[03.07.21|16:23:36] Training epoch: 5
+[03.07.21|16:23:44] 	Iter 1000 Done. | loss: 3.6277 | aps: [0.         1.         1.         0.98214286] | mean_ap: 0.9940 | f1: 0.4097 | lr: 0.000995 | tr: 0.975249
+[03.07.21|16:24:25] 	Iter 1100 Done. | loss: 3.5973 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.4840 | lr: 0.000995 | tr: 0.975249
+log: processor.py show_epoch_info()
+[03.07.21|16:24:59] 	mean_loss: 3.5660980122948662. Best so far: 3.558650811513265 (epoch: 4).
+log: i  1
+[03.07.21|16:24:59] 	mean_aps: [0.30076142 0.92674118 0.97842252 0.95700045]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:24:59] 	mean_mean_ap: 0.969419320126027. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:24:59] Time consumption:
+[03.07.21|16:24:59] Done.
+[03.07.21|16:24:59] Eval epoch: 5
+log: processor.py show_epoch_info()
+[03.07.21|16:25:06] 	mean_loss: 3.545580364408947. Best so far: 3.545580364408947 (epoch: 5).
+log: i  1
+[03.07.21|16:25:06] 	mean_aps: [0.04656085 0.72452354 0.8047863  0.75034554]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:25:06] 	mean_mean_ap: 0.7447055396767226. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:25:06] Done.
+[03.07.21|16:25:06] Training epoch: 6
+[03.07.21|16:25:15] 	Iter 1200 Done. | loss: 3.6092 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.6476 | lr: 0.000994 | tr: 0.970373
+[03.07.21|16:25:56] 	Iter 1300 Done. | loss: 3.5624 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5303 | lr: 0.000994 | tr: 0.970373
+log: processor.py show_epoch_info()
+[03.07.21|16:26:29] 	mean_loss: 3.5554758376881557. Best so far: 3.545580364408947 (epoch: 5).
+log: i  1
+[03.07.21|16:26:29] 	mean_aps: [0.29521997 0.91123859 0.97688016 0.95584852]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:26:29] 	mean_mean_ap: 0.9663109712131246. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:26:29] Time consumption:
+[03.07.21|16:26:29] Done.
+[03.07.21|16:26:29] Eval epoch: 6
+log: processor.py show_epoch_info()
+[03.07.21|16:26:36] 	mean_loss: 3.5395346823192777. Best so far: 3.5395346823192777 (epoch: 6).
+log: i  1
+[03.07.21|16:26:36] 	mean_aps: [0.1468254  0.69893707 0.87510234 0.74263494]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:26:36] 	mean_mean_ap: 0.773951973676676. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:26:36] Done.
+[03.07.21|16:26:36] Training epoch: 7
+[03.07.21|16:26:46] 	Iter 1400 Done. | loss: 3.5622 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5282 | lr: 0.000993 | tr: 0.965521
+[03.07.21|16:27:28] 	Iter 1500 Done. | loss: 3.5187 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5364 | lr: 0.000993 | tr: 0.965521
+log: processor.py show_epoch_info()
+[03.07.21|16:27:59] 	mean_loss: 3.5482120187149433. Best so far: 3.5395346823192777 (epoch: 6).
+log: i  1
+[03.07.21|16:27:59] 	mean_aps: [0.28688663 0.91944086 0.97949442 0.94993863]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:27:59] 	mean_mean_ap: 0.9636853446116398. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:27:59] Time consumption:
+[03.07.21|16:27:59] Done.
+[03.07.21|16:27:59] Eval epoch: 7
+log: processor.py show_epoch_info()
+[03.07.21|16:28:06] 	mean_loss: 3.5265572525206066. Best so far: 3.5265572525206066 (epoch: 7).
+log: i  1
+[03.07.21|16:28:06] 	mean_aps: [0.04100529 0.68797001 0.86731751 0.80304765]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:28:06] 	mean_mean_ap: 0.783062727616299. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:28:06] Done.
+[03.07.21|16:28:06] Training epoch: 8
+[03.07.21|16:28:17] 	Iter 1600 Done. | loss: 3.5835 | aps: [1.         0.83333333 1.         1.        ] | mean_ap: 0.9583 | f1: 0.6114 | lr: 0.000992 | tr: 0.960693
+[03.07.21|16:28:58] 	Iter 1700 Done. | loss: 3.5321 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5893 | lr: 0.000992 | tr: 0.960693
+log: processor.py show_epoch_info()
+[03.07.21|16:29:28] 	mean_loss: 3.5430198526624497. Best so far: 3.5265572525206066 (epoch: 7).
+log: i  1
+[03.07.21|16:29:28] 	mean_aps: [0.28045685 0.91099483 0.97614151 0.95677132]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:29:28] 	mean_mean_ap: 0.9664255827550361. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:29:28] Time consumption:
+[03.07.21|16:29:28] Done.
+[03.07.21|16:29:28] Eval epoch: 8
+log: processor.py show_epoch_info()
+[03.07.21|16:29:35] 	mean_loss: 3.5330690202258883. Best so far: 3.5265572525206066 (epoch: 7).
+log: i  1
+[03.07.21|16:29:35] 	mean_aps: [0.07823129 0.68380746 0.84583725 0.78656841]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:29:35] 	mean_mean_ap: 0.7789815596486043. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:29:35] Done.
+[03.07.21|16:29:35] Training epoch: 9
+[03.07.21|16:29:47] 	Iter 1800 Done. | loss: 3.5252 | aps: [0.         1.         0.975      0.92666667] | mean_ap: 0.9672 | f1: 0.5355 | lr: 0.000991 | tr: 0.955890
+[03.07.21|16:30:28] 	Iter 1900 Done. | loss: 3.5575 | aps: [1.         1.         0.87619048 1.        ] | mean_ap: 0.9690 | f1: 0.5762 | lr: 0.000991 | tr: 0.955890
+log: processor.py show_epoch_info()
+[03.07.21|16:30:57] 	mean_loss: 3.540084532674799. Best so far: 3.5265572525206066 (epoch: 7).
+log: i  1
+[03.07.21|16:30:57] 	mean_aps: [0.30626058 0.9359501  0.9747118  0.93256791]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:30:57] 	mean_mean_ap: 0.9667125382580938. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:30:57] Time consumption:
+[03.07.21|16:30:57] Done.
+[03.07.21|16:30:57] Eval epoch: 9
+log: processor.py show_epoch_info()
+[03.07.21|16:31:04] 	mean_loss: 3.5239522684188116. Best so far: 3.5239522684188116 (epoch: 9).
+log: i  1
+[03.07.21|16:31:04] 	mean_aps: [0.10204082 0.60894085 0.88196993 0.77798564]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:31:04] 	mean_mean_ap: 0.7464043582994573. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:31:04] Done.
+[03.07.21|16:31:04] Training epoch: 10
+[03.07.21|16:31:18] 	Iter 2000 Done. | loss: 3.5065 | aps: [0.         0.         1.         0.83333333] | mean_ap: 0.9167 | f1: 0.3697 | lr: 0.000990 | tr: 0.951110
+[03.07.21|16:32:00] 	Iter 2100 Done. | loss: 3.4748 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5208 | lr: 0.000990 | tr: 0.951110
+log: processor.py show_epoch_info()
+[03.07.21|16:32:29] 	mean_loss: 3.5357264540522233. Best so far: 3.5239522684188116 (epoch: 9).
+log: i  1
+[03.07.21|16:32:29] 	mean_aps: [0.29543147 0.93111889 0.97607474 0.94173683]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:32:29] 	mean_mean_ap: 0.9666743859832904. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:32:29] Time consumption:
+[03.07.21|16:32:29] Done.
+[03.07.21|16:32:29] Eval epoch: 10
+log: processor.py show_epoch_info()
+[03.07.21|16:32:36] 	mean_loss: 3.5228951204390753. Best so far: 3.5228951204390753 (epoch: 10).
+log: i  1
+[03.07.21|16:32:36] 	mean_aps: [0.05846561 0.57528516 0.81889062 0.71779886]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:32:36] 	mean_mean_ap: 0.7029215930700483. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:32:36] Done.
+[03.07.21|16:32:36] Training epoch: 11
+[03.07.21|16:32:51] 	Iter 2200 Done. | loss: 3.5435 | aps: [0.         0.95       0.96666667 0.83333333] | mean_ap: 0.9167 | f1: 0.4840 | lr: 0.000989 | tr: 0.946355
+[03.07.21|16:33:34] 	Iter 2300 Done. | loss: 3.5388 | aps: [0.         1.         0.96666667 1.        ] | mean_ap: 0.9889 | f1: 0.4352 | lr: 0.000989 | tr: 0.946355
+log: processor.py show_epoch_info()
+[03.07.21|16:34:00] 	mean_loss: 3.53400060489093. Best so far: 3.5228951204390753 (epoch: 10).
+log: i  1
+[03.07.21|16:34:00] 	mean_aps: [0.31586899 0.89209751 0.97434054 0.94625812]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:34:00] 	mean_mean_ap: 0.962600118426968. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:34:00] Time consumption:
+[03.07.21|16:34:00] Done.
+[03.07.21|16:34:00] Eval epoch: 11
+log: processor.py show_epoch_info()
+[03.07.21|16:34:08] 	mean_loss: 3.5177203927721297. Best so far: 3.5177203927721297 (epoch: 11).
+log: i  1
+[03.07.21|16:34:08] 	mean_aps: [0.18253968 0.51038532 0.89514065 0.63261537]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:34:08] 	mean_mean_ap: 0.703854458316382. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:34:08] Done.
+[03.07.21|16:34:08] Training epoch: 12
+[03.07.21|16:34:24] 	Iter 2400 Done. | loss: 3.5040 | aps: [0.         1.         0.97979798 1.        ] | mean_ap: 0.9933 | f1: 0.4917 | lr: 0.000988 | tr: 0.941623
+[03.07.21|16:35:06] 	Iter 2500 Done. | loss: 3.5117 | aps: [0. 0. 1. 1.] | mean_ap: 1.0000 | f1: 0.4643 | lr: 0.000988 | tr: 0.941623
+log: processor.py show_epoch_info()
+[03.07.21|16:35:32] 	mean_loss: 3.5320941240049257. Best so far: 3.5177203927721297 (epoch: 11).
+log: i  1
+[03.07.21|16:35:32] 	mean_aps: [0.28891709 0.90479547 0.97430185 0.94603546]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:35:32] 	mean_mean_ap: 0.9648120322988762. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:35:32] Time consumption:
+[03.07.21|16:35:32] Done.
+[03.07.21|16:35:32] Eval epoch: 12
+log: processor.py show_epoch_info()
+[03.07.21|16:35:39] 	mean_loss: 3.52170805704026. Best so far: 3.5177203927721297 (epoch: 11).
+log: i  1
+[03.07.21|16:35:39] 	mean_aps: [0.15079365 0.58761527 0.91282275 0.7131442 ]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:35:39] 	mean_mean_ap: 0.729501669140747. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:35:39] Done.
+[03.07.21|16:35:39] Training epoch: 13
+[03.07.21|16:35:56] 	Iter 2600 Done. | loss: 3.4964 | aps: [1.         0.96666667 1.         1.        ] | mean_ap: 0.9917 | f1: 0.8917 | lr: 0.000987 | tr: 0.936915
+[03.07.21|16:36:38] 	Iter 2700 Done. | loss: 3.5040 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5745 | lr: 0.000987 | tr: 0.936915
+log: processor.py show_epoch_info()
+[03.07.21|16:37:02] 	mean_loss: 3.531069117754244. Best so far: 3.5177203927721297 (epoch: 11).
+log: i  1
+[03.07.21|16:37:02] 	mean_aps: [0.29916808 0.9246329  0.97169114 0.94825334]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:37:02] 	mean_mean_ap: 0.9636543558890922. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:37:02] Time consumption:
+[03.07.21|16:37:02] Done.
+[03.07.21|16:37:02] Eval epoch: 13
+log: processor.py show_epoch_info()
+[03.07.21|16:37:08] 	mean_loss: 3.509593191600981. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:37:08] 	mean_aps: [0.16553288 0.54646724 0.92815228 0.70388517]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:37:08] 	mean_mean_ap: 0.733302899544396. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:37:08] Done.
+[03.07.21|16:37:09] Training epoch: 14
+[03.07.21|16:37:28] 	Iter 2800 Done. | loss: 3.5374 | aps: [1.         0.         1.         0.96666667] | mean_ap: 0.9889 | f1: 0.5590 | lr: 0.000986 | tr: 0.932230
+[03.07.21|16:38:09] 	Iter 2900 Done. | loss: 3.5106 | aps: [0.         1.         1.         0.91666667] | mean_ap: 0.9722 | f1: 0.4476 | lr: 0.000986 | tr: 0.932230
+log: processor.py show_epoch_info()
+[03.07.21|16:38:31] 	mean_loss: 3.5270720980494157. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:38:31] 	mean_aps: [0.30050761 0.90031078 0.97308962 0.94648898]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:38:31] 	mean_mean_ap: 0.9649076325051267. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:38:31] Time consumption:
+[03.07.21|16:38:31] Done.
+[03.07.21|16:38:31] Eval epoch: 14
+log: processor.py show_epoch_info()
+[03.07.21|16:38:38] 	mean_loss: 3.510555324100313. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:38:38] 	mean_aps: [0.09920635 0.59697657 0.91309464 0.70344322]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:38:38] 	mean_mean_ap: 0.7617972107400834. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:38:38] Done.
+[03.07.21|16:38:38] Training epoch: 15
+[03.07.21|16:38:58] 	Iter 3000 Done. | loss: 3.5346 | aps: [0.         1.         0.96666667 0.85416667] | mean_ap: 0.9403 | f1: 0.4286 | lr: 0.000985 | tr: 0.927569
+[03.07.21|16:39:38] 	Iter 3100 Done. | loss: 3.4978 | aps: [0.         1.         1.         0.91666667] | mean_ap: 0.9722 | f1: 0.5016 | lr: 0.000985 | tr: 0.927569
+log: processor.py show_epoch_info()
+[03.07.21|16:40:00] 	mean_loss: 3.5270719225636595. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:40:00] 	mean_aps: [0.29881557 0.91013322 0.97565906 0.94565366]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:40:00] 	mean_mean_ap: 0.9641807221475218. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:40:00] Time consumption:
+[03.07.21|16:40:00] Done.
+[03.07.21|16:40:00] Eval epoch: 15
+log: processor.py show_epoch_info()
+[03.07.21|16:40:07] 	mean_loss: 3.510437182017735. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:40:07] 	mean_aps: [0.08333333 0.70715892 0.94209166 0.77102951]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:40:07] 	mean_mean_ap: 0.7974259101788864. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:40:07] Done.
+[03.07.21|16:40:07] Training epoch: 16
+[03.07.21|16:40:28] 	Iter 3200 Done. | loss: 3.5011 | aps: [0.         1.         0.97619048 1.        ] | mean_ap: 0.9921 | f1: 0.5060 | lr: 0.000984 | tr: 0.922931
+[03.07.21|16:41:11] 	Iter 3300 Done. | loss: 3.5321 | aps: [1.         1.         0.9484127  0.91111111] | mean_ap: 0.9649 | f1: 0.7027 | lr: 0.000984 | tr: 0.922931
+log: processor.py show_epoch_info()
+[03.07.21|16:41:32] 	mean_loss: 3.5237884727226296. Best so far: 3.509593191600981 (epoch: 13).
+log: i  1
+[03.07.21|16:41:32] 	mean_aps: [0.31387479 0.90954582 0.97595761 0.94102723]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:41:32] 	mean_mean_ap: 0.9671426591817778. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:41:32] Time consumption:
+[03.07.21|16:41:32] Done.
+[03.07.21|16:41:32] Eval epoch: 16
+log: processor.py show_epoch_info()
+[03.07.21|16:41:39] 	mean_loss: 3.508947792507353. Best so far: 3.508947792507353 (epoch: 16).
+log: i  1
+[03.07.21|16:41:39] 	mean_aps: [0.16825397 0.63867536 0.92204702 0.69965797]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:41:39] 	mean_mean_ap: 0.7816111502287568. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:41:39] Done.
+[03.07.21|16:41:39] Training epoch: 17
+[03.07.21|16:42:02] 	Iter 3400 Done. | loss: 3.5680 | aps: [1.    0.925 1.    1.   ] | mean_ap: 0.9812 | f1: 0.7500 | lr: 0.000983 | tr: 0.918316
+[03.07.21|16:42:44] 	Iter 3500 Done. | loss: 3.4909 | aps: [0.         0.89546485 1.         0.91666667] | mean_ap: 0.9374 | f1: 0.6235 | lr: 0.000983 | tr: 0.918316
+log: processor.py show_epoch_info()
+[03.07.21|16:43:03] 	mean_loss: 3.5482291061866102. Best so far: 3.508947792507353 (epoch: 16).
+log: i  1
+[03.07.21|16:43:03] 	mean_aps: [0.30896785 0.88110158 0.96299794 0.9468645 ]. Best so far: 0 (epoch: 1).
+log: i  2
+[03.07.21|16:43:03] 	mean_mean_ap: 0.9573714003363735. Best so far: 0.7997308490968732 (epoch: 1).
+log: i  3
+[03.07.21|16:43:03] Time consumption:
+[03.07.21|16:43:03] Done.
+[03.07.21|16:43:03] Eval epoch: 17
+log: processor.py show_epoch_info()
+[03.07.21|16:43:10] 	mean_loss: 3.5153943243480863. Best so far: 3.508947792507353 (epoch: 16).
+log: i  1
+[03.07.21|16:43:10] 	mean_aps: [0.15079365 0.72423037 0.9046373  0.77997354]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:43:10] 	mean_mean_ap: 0.8080140974493298. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:43:10] Done.
+[03.07.21|16:43:10] Training epoch: 18
+[03.07.21|16:43:33] 	Iter 3600 Done. | loss: 3.5222 | aps: [1.         1.         1.         0.85285714] | mean_ap: 0.9632 | f1: 0.5471 | lr: 0.000982 | tr: 0.913725
+[03.07.21|16:44:14] 	Iter 3700 Done. | loss: 3.5157 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.4940 | lr: 0.000982 | tr: 0.913725
+log: processor.py show_epoch_info()
+[03.07.21|16:44:31] 	mean_loss: 3.5216424670921365. Best so far: 3.508947792507353 (epoch: 16).
+log: i  1
+[03.07.21|16:44:31] 	mean_aps: [0.3000846  0.90935878 0.97328837 0.92938178]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:44:31] 	mean_mean_ap: 0.9627752169036613. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:44:31] Time consumption:
+[03.07.21|16:44:31] Done.
+[03.07.21|16:44:31] Eval epoch: 18
+log: processor.py show_epoch_info()
+[03.07.21|16:44:38] 	mean_loss: 3.507630983988444. Best so far: 3.507630983988444 (epoch: 18).
+log: i  1
+[03.07.21|16:44:38] 	mean_aps: [0.05714286 0.60732237 0.85633031 0.81951837]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:44:38] 	mean_mean_ap: 0.7757975532418087. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:44:38] Done.
+[03.07.21|16:44:38] Training epoch: 19
+[03.07.21|16:45:03] 	Iter 3800 Done. | loss: 3.5369 | aps: [1.         0.96666667 0.925      0.91666667] | mean_ap: 0.9521 | f1: 0.6994 | lr: 0.000981 | tr: 0.909156
+[03.07.21|16:45:44] 	Iter 3900 Done. | loss: 3.5335 | aps: [1.         0.         1.         0.91666667] | mean_ap: 0.9722 | f1: 0.5208 | lr: 0.000981 | tr: 0.909156
+log: processor.py show_epoch_info()
+[03.07.21|16:46:00] 	mean_loss: 3.529353084903078. Best so far: 3.507630983988444 (epoch: 18).
+log: i  1
+[03.07.21|16:46:00] 	mean_aps: [0.29399323 0.90826352 0.97310827 0.94012441]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:46:00] 	mean_mean_ap: 0.9638430824775096. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:46:00] Time consumption:
+[03.07.21|16:46:00] Done.
+[03.07.21|16:46:00] Eval epoch: 19
+log: processor.py show_epoch_info()
+[03.07.21|16:46:07] 	mean_loss: 3.508237816038586. Best so far: 3.507630983988444 (epoch: 18).
+log: i  1
+[03.07.21|16:46:07] 	mean_aps: [0.11269841 0.62751221 0.88040081 0.6975007 ]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:46:07] 	mean_mean_ap: 0.7573380442687996. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:46:07] Done.
+[03.07.21|16:46:07] Training epoch: 20
+[03.07.21|16:46:32] 	Iter 4000 Done. | loss: 3.5117 | aps: [1.         0.91666667 1.         0.96666667] | mean_ap: 0.9708 | f1: 0.7340 | lr: 0.000980 | tr: 0.904610
+[03.07.21|16:47:13] 	Iter 4100 Done. | loss: 3.5370 | aps: [0.   1.   0.95 1.  ] | mean_ap: 0.9833 | f1: 0.6667 | lr: 0.000980 | tr: 0.904610
+log: processor.py show_epoch_info()
+[03.07.21|16:47:28] 	mean_loss: 3.520732002209891. Best so far: 3.507630983988444 (epoch: 18).
+log: i  1
+[03.07.21|16:47:28] 	mean_aps: [0.31387479 0.90803194 0.97450751 0.94867201]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:47:28] 	mean_mean_ap: 0.9653014395646767. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:47:28] Time consumption:
+[03.07.21|16:47:28] Done.
+[03.07.21|16:47:28] Eval epoch: 20
+log: processor.py show_epoch_info()
+[03.07.21|16:47:35] 	mean_loss: 3.5057490439642045. Best so far: 3.5057490439642045 (epoch: 20).
+log: i  1
+[03.07.21|16:47:35] 	mean_aps: [0.12301587 0.65443105 0.85870839 0.77361158]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:47:35] 	mean_mean_ap: 0.7953500482818321. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:47:35] Done.
+[03.07.21|16:47:35] Training epoch: 21
+[03.07.21|16:48:02] 	Iter 4200 Done. | loss: 3.5152 | aps: [0.         0.83333333 0.95262897 0.88194444] | mean_ap: 0.8893 | f1: 0.4980 | lr: 0.000979 | tr: 0.900087
+[03.07.21|16:48:43] 	Iter 4300 Done. | loss: 3.5216 | aps: [0.         0.9484127  0.97619048 0.87619048] | mean_ap: 0.9336 | f1: 0.5417 | lr: 0.000979 | tr: 0.900087
+log: processor.py show_epoch_info()
+[03.07.21|16:48:57] 	mean_loss: 3.5190074056538228. Best so far: 3.5057490439642045 (epoch: 20).
+log: i  1
+[03.07.21|16:48:57] 	mean_aps: [0.2893401  0.91011841 0.97716428 0.93935348]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:48:57] 	mean_mean_ap: 0.9625392183580862. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:48:57] Time consumption:
+[03.07.21|16:48:57] Done.
+[03.07.21|16:48:57] Eval epoch: 21
+log: processor.py show_epoch_info()
+[03.07.21|16:49:03] 	mean_loss: 3.5037924562181746. Best so far: 3.5037924562181746 (epoch: 21).
+log: i  1
+[03.07.21|16:49:03] 	mean_aps: [0.12460317 0.73675767 0.89965399 0.65346644]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:49:03] 	mean_mean_ap: 0.7857691750541805. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:49:03] Done.
+[03.07.21|16:49:04] Training epoch: 22
+[03.07.21|16:49:32] 	Iter 4400 Done. | loss: 3.4959 | aps: [0.         0.84090909 1.         0.7       ] | mean_ap: 0.8470 | f1: 0.5318 | lr: 0.000978 | tr: 0.895587
+[03.07.21|16:50:14] 	Iter 4500 Done. | loss: 3.5029 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.6500 | lr: 0.000978 | tr: 0.895587
+log: processor.py show_epoch_info()
+[03.07.21|16:50:27] 	mean_loss: 3.5181012407777272. Best so far: 3.5037924562181746 (epoch: 21).
+log: i  1
+[03.07.21|16:50:27] 	mean_aps: [0.30148658 0.89591857 0.97437675 0.93394398]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:50:27] 	mean_mean_ap: 0.9644296949433145. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:50:27] Time consumption:
+[03.07.21|16:50:27] Done.
+[03.07.21|16:50:27] Eval epoch: 22
+log: processor.py show_epoch_info()
+[03.07.21|16:50:33] 	mean_loss: 3.5063545930953253. Best so far: 3.5037924562181746 (epoch: 21).
+log: i  1
+[03.07.21|16:50:33] 	mean_aps: [0.17460317 0.62052326 0.87129687 0.63636185]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:50:33] 	mean_mean_ap: 0.724680641753829. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:50:34] Done.
+[03.07.21|16:50:34] Training epoch: 23
+[03.07.21|16:51:04] 	Iter 4600 Done. | loss: 3.5189 | aps: [1.         0.91666667 1.         0.94444444] | mean_ap: 0.9653 | f1: 0.8185 | lr: 0.000977 | tr: 0.891109
+[03.07.21|16:51:46] 	Iter 4700 Done. | loss: 3.5536 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.8214 | lr: 0.000977 | tr: 0.891109
+log: processor.py show_epoch_info()
+[03.07.21|16:51:57] 	mean_loss: 3.5161979900398834. Best so far: 3.5037924562181746 (epoch: 21).
+log: i  1
+[03.07.21|16:51:57] 	mean_aps: [0.28764805 0.93681048 0.97267943 0.95501956]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:51:57] 	mean_mean_ap: 0.9654597867775567. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:51:57] Time consumption:
+[03.07.21|16:51:57] Done.
+[03.07.21|16:51:57] Eval epoch: 23
+log: processor.py show_epoch_info()
+[03.07.21|16:52:05] 	mean_loss: 3.5032907213483537. Best so far: 3.5032907213483537 (epoch: 23).
+log: i  1
+[03.07.21|16:52:05] 	mean_aps: [0.18253968 0.65612322 0.82709    0.71632619]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:52:05] 	mean_mean_ap: 0.7594712272501861. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:52:05] Done.
+[03.07.21|16:52:05] Training epoch: 24
+[03.07.21|16:52:37] 	Iter 4800 Done. | loss: 3.4994 | aps: [0.         1.         1.         0.83333333] | mean_ap: 0.9444 | f1: 0.4921 | lr: 0.000976 | tr: 0.886654
+[03.07.21|16:53:19] 	Iter 4900 Done. | loss: 3.5042 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5458 | lr: 0.000976 | tr: 0.886654
+log: processor.py show_epoch_info()
+[03.07.21|16:53:29] 	mean_loss: 3.5147445419718166. Best so far: 3.5032907213483537 (epoch: 23).
+log: i  1
+[03.07.21|16:53:29] 	mean_aps: [0.31472081 0.89604762 0.97556984 0.94522785]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:53:29] 	mean_mean_ap: 0.963093851143049. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:53:29] Time consumption:
+[03.07.21|16:53:29] Done.
+[03.07.21|16:53:29] Eval epoch: 24
+log: processor.py show_epoch_info()
+[03.07.21|16:53:36] 	mean_loss: 3.502363908858526. Best so far: 3.502363908858526 (epoch: 24).
+log: i  1
+[03.07.21|16:53:36] 	mean_aps: [0.13095238 0.64734488 0.83698245 0.70963246]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:53:36] 	mean_mean_ap: 0.7411140365838494. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:53:36] Done.
+[03.07.21|16:53:37] Training epoch: 25
+[03.07.21|16:54:10] 	Iter 5000 Done. | loss: 3.5525 | aps: [0.         0.86666667 1.         0.97619048] | mean_ap: 0.9476 | f1: 0.5173 | lr: 0.000975 | tr: 0.882220
+[03.07.21|16:54:52] 	Iter 5100 Done. | loss: 3.5635 | aps: [0.         0.92666667 1.         0.97619048] | mean_ap: 0.9676 | f1: 0.5316 | lr: 0.000975 | tr: 0.882220
+log: processor.py show_epoch_info()
+[03.07.21|16:55:01] 	mean_loss: 3.515803874446656. Best so far: 3.502363908858526 (epoch: 24).
+log: i  1
+[03.07.21|16:55:01] 	mean_aps: [0.29384518 0.91833007 0.96635819 0.95916843]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:55:01] 	mean_mean_ap: 0.9652473460061612. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:55:01] Time consumption:
+[03.07.21|16:55:01] Done.
+[03.07.21|16:55:01] Eval epoch: 25
+log: processor.py show_epoch_info()
+[03.07.21|16:55:08] 	mean_loss: 3.497884761719477. Best so far: 3.497884761719477 (epoch: 25).
+log: i  1
+[03.07.21|16:55:08] 	mean_aps: [0.1031746  0.62856653 0.88030911 0.74582603]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:55:08] 	mean_mean_ap: 0.7582559546986986. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:55:08] Done.
+[03.07.21|16:55:09] Training epoch: 26
+[03.07.21|16:55:43] 	Iter 5200 Done. | loss: 3.4908 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.6042 | lr: 0.000974 | tr: 0.877809
+[03.07.21|16:56:25] 	Iter 5300 Done. | loss: 3.5300 | aps: [1.         1.         0.88333333 0.94805195] | mean_ap: 0.9578 | f1: 0.6425 | lr: 0.000974 | tr: 0.877809
+log: processor.py show_epoch_info()
+[03.07.21|16:56:33] 	mean_loss: 3.512406776399177. Best so far: 3.497884761719477 (epoch: 25).
+log: i  1
+[03.07.21|16:56:33] 	mean_aps: [0.30135364 0.92006461 0.96575415 0.92194036]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:56:33] 	mean_mean_ap: 0.9609758644720572. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:56:33] Time consumption:
+[03.07.21|16:56:33] Done.
+[03.07.21|16:56:33] Eval epoch: 26
+log: processor.py show_epoch_info()
+[03.07.21|16:56:39] 	mean_loss: 3.500654947190058. Best so far: 3.497884761719477 (epoch: 25).
+log: i  1
+[03.07.21|16:56:39] 	mean_aps: [0.03225624 0.66470315 0.84185462 0.75365926]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:56:39] 	mean_mean_ap: 0.7336315811831922. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:56:39] Done.
+[03.07.21|16:56:39] Training epoch: 27
+[03.07.21|16:57:14] 	Iter 5400 Done. | loss: 3.5020 | aps: [0.         0.81785714 0.98611111 0.95      ] | mean_ap: 0.9180 | f1: 0.5677 | lr: 0.000973 | tr: 0.873420
+[03.07.21|16:57:55] 	Iter 5500 Done. | loss: 3.4786 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.7876 | lr: 0.000973 | tr: 0.873420
+log: processor.py show_epoch_info()
+[03.07.21|16:58:02] 	mean_loss: 3.5131374143706964. Best so far: 3.497884761719477 (epoch: 25).
+log: i  1
+[03.07.21|16:58:02] 	mean_aps: [0.27072758 0.90742688 0.96593083 0.94597366]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:58:02] 	mean_mean_ap: 0.9622922222108301. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:58:02] Time consumption:
+[03.07.21|16:58:02] Done.
+[03.07.21|16:58:02] Eval epoch: 27
+log: processor.py show_epoch_info()
+[03.07.21|16:58:09] 	mean_loss: 3.496101526986985. Best so far: 3.496101526986985 (epoch: 27).
+log: i  1
+[03.07.21|16:58:09] 	mean_aps: [0.08333333 0.59522209 0.88908741 0.74831916]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:58:09] 	mean_mean_ap: 0.788287462297997. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:58:09] Done.
+[03.07.21|16:58:09] Training epoch: 28
+[03.07.21|16:58:45] 	Iter 5600 Done. | loss: 3.5361 | aps: [0.         1.         0.95       0.96666667] | mean_ap: 0.9722 | f1: 0.4840 | lr: 0.000972 | tr: 0.869053
+[03.07.21|16:59:26] 	Iter 5700 Done. | loss: 3.5101 | aps: [0.         0.85090909 0.93792517 1.        ] | mean_ap: 0.9296 | f1: 0.5069 | lr: 0.000972 | tr: 0.869053
+log: processor.py show_epoch_info()
+[03.07.21|16:59:31] 	mean_loss: 3.5109046231671637. Best so far: 3.496101526986985 (epoch: 27).
+log: i  1
+[03.07.21|16:59:31] 	mean_aps: [0.30177665 0.92506046 0.97411196 0.95149993]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:59:31] 	mean_mean_ap: 0.9701397986501423. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:59:31] Time consumption:
+[03.07.21|16:59:31] Done.
+[03.07.21|16:59:31] Eval epoch: 28
+log: processor.py show_epoch_info()
+[03.07.21|16:59:38] 	mean_loss: 3.494816087541126. Best so far: 3.494816087541126 (epoch: 28).
+log: i  1
+[03.07.21|16:59:38] 	mean_aps: [0.11640212 0.55655536 0.8531575  0.75850805]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|16:59:38] 	mean_mean_ap: 0.7201038843683402. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|16:59:38] Done.
+[03.07.21|16:59:38] Training epoch: 29
+[03.07.21|17:00:15] 	Iter 5800 Done. | loss: 3.5648 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.4333 | lr: 0.000971 | tr: 0.864708
+[03.07.21|17:00:56] 	Iter 5900 Done. | loss: 3.4567 | aps: [0. 1. 1. 0.] | mean_ap: 1.0000 | f1: 0.4643 | lr: 0.000971 | tr: 0.864708
+log: processor.py show_epoch_info()
+[03.07.21|17:01:00] 	mean_loss: 3.509388987788089. Best so far: 3.494816087541126 (epoch: 28).
+log: i  1
+[03.07.21|17:01:00] 	mean_aps: [0.30668359 0.91762761 0.97311104 0.93056896]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:01:00] 	mean_mean_ap: 0.9636793640131658. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:01:00] Time consumption:
+[03.07.21|17:01:00] Done.
+[03.07.21|17:01:00] Eval epoch: 29
+log: processor.py show_epoch_info()
+[03.07.21|17:01:07] 	mean_loss: 3.4956389495304654. Best so far: 3.494816087541126 (epoch: 28).
+log: i  1
+[03.07.21|17:01:07] 	mean_aps: [0.15238095 0.65028516 0.84097866 0.76259116]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:01:07] 	mean_mean_ap: 0.7686555187851958. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:01:07] Done.
+[03.07.21|17:01:07] Training epoch: 30
+[03.07.21|17:01:45] 	Iter 6000 Done. | loss: 3.5012 | aps: [0.         1.         0.96666667 1.        ] | mean_ap: 0.9889 | f1: 0.5893 | lr: 0.000970 | tr: 0.860384
+[03.07.21|17:02:26] 	Iter 6100 Done. | loss: 3.5050 | aps: [0.         0.86666667 1.         0.86666667] | mean_ap: 0.9111 | f1: 0.5030 | lr: 0.000970 | tr: 0.860384
+log: processor.py show_epoch_info()
+[03.07.21|17:02:29] 	mean_loss: 3.5088709901432096. Best so far: 3.494816087541126 (epoch: 28).
+log: i  1
+[03.07.21|17:02:29] 	mean_aps: [0.29060914 0.93421358 0.97510039 0.94828727]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:02:29] 	mean_mean_ap: 0.9666846361595726. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:02:29] Time consumption:
+[03.07.21|17:02:29] Done.
+[03.07.21|17:02:29] Eval epoch: 30
+log: processor.py show_epoch_info()
+[03.07.21|17:02:36] 	mean_loss: 3.4931477932702926. Best so far: 3.4931477932702926 (epoch: 30).
+log: i  1
+[03.07.21|17:02:36] 	mean_aps: [0.11904762 0.65112434 0.88066697 0.75494692]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:02:36] 	mean_mean_ap: 0.7895087680334278. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:02:36] Done.
+[03.07.21|17:02:36] Training epoch: 31
+[03.07.21|17:03:16] 	Iter 6200 Done. | loss: 3.5451 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5818 | lr: 0.000969 | tr: 0.856082
+[03.07.21|17:03:57] 	Iter 6300 Done. | loss: 3.5232 | aps: [0.         0.92666667 0.91507937 0.94285714] | mean_ap: 0.9282 | f1: 0.5360 | lr: 0.000969 | tr: 0.856082
+log: processor.py show_epoch_info()
+[03.07.21|17:03:58] 	mean_loss: 3.5089140107789016. Best so far: 3.4931477932702926 (epoch: 30).
+log: i  1
+[03.07.21|17:03:58] 	mean_aps: [0.28126058 0.91274267 0.96843333 0.95178886]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:03:58] 	mean_mean_ap: 0.9622358558445622. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:03:58] Time consumption:
+[03.07.21|17:03:58] Done.
+[03.07.21|17:03:58] Eval epoch: 31
+log: processor.py show_epoch_info()
+[03.07.21|17:04:05] 	mean_loss: 3.4950623171670094. Best so far: 3.4931477932702926 (epoch: 30).
+log: i  1
+[03.07.21|17:04:05] 	mean_aps: [0.13492063 0.53740913 0.8259794  0.76896808]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:04:05] 	mean_mean_ap: 0.7134918794357569. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:04:05] Done.
+[03.07.21|17:04:05] Training epoch: 32
+[03.07.21|17:04:46] 	Iter 6400 Done. | loss: 3.5219 | aps: [0.         0.94285714 1.         1.        ] | mean_ap: 0.9810 | f1: 0.6402 | lr: 0.000968 | tr: 0.851802
+[03.07.21|17:05:28] 	Iter 6500 Done. | loss: 3.4854 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5476 | lr: 0.000968 | tr: 0.851802
+log: processor.py show_epoch_info()
+[03.07.21|17:05:28] 	mean_loss: 3.5084601477318005. Best so far: 3.4931477932702926 (epoch: 30).
+log: i  1
+[03.07.21|17:05:28] 	mean_aps: [0.28666103 0.9163191  0.96794082 0.94415684]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:05:28] 	mean_mean_ap: 0.9597656143963729. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:05:28] Time consumption:
+[03.07.21|17:05:28] Done.
+[03.07.21|17:05:28] Eval epoch: 32
+log: processor.py show_epoch_info()
+[03.07.21|17:05:35] 	mean_loss: 3.491715056555612. Best so far: 3.491715056555612 (epoch: 32).
+log: i  1
+[03.07.21|17:05:35] 	mean_aps: [0.10119048 0.60465213 0.89342518 0.77872883]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:05:35] 	mean_mean_ap: 0.7543494790593005. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:05:35] Done.
+[03.07.21|17:05:35] Training epoch: 33
+[03.07.21|17:06:18] 	Iter 6600 Done. | loss: 3.5062 | aps: [0.         1.         0.97619048 1.        ] | mean_ap: 0.9921 | f1: 0.5205 | lr: 0.000968 | tr: 0.847543
+log: processor.py show_epoch_info()
+[03.07.21|17:06:59] 	mean_loss: 3.507265230120741. Best so far: 3.491715056555612 (epoch: 32).
+log: i  1
+[03.07.21|17:06:59] 	mean_aps: [0.31091371 0.92988679 0.97644986 0.94556388]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:06:59] 	mean_mean_ap: 0.9642607702128867. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:06:59] Time consumption:
+[03.07.21|17:06:59] Done.
+[03.07.21|17:06:59] Eval epoch: 33
+log: processor.py show_epoch_info()
+[03.07.21|17:07:06] 	mean_loss: 3.4910327252887545. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:07:06] 	mean_aps: [0.07698413 0.51062422 0.8550464  0.75256859]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:07:06] 	mean_mean_ap: 0.753834639551051. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:07:06] Done.
+[03.07.21|17:07:07] Training epoch: 34
+[03.07.21|17:07:09] 	Iter 6700 Done. | loss: 3.4835 | aps: [0.   0.85 1.   0.  ] | mean_ap: 0.9250 | f1: 0.3917 | lr: 0.000967 | tr: 0.843305
+[03.07.21|17:07:51] 	Iter 6800 Done. | loss: 3.5374 | aps: [1.         0.80952381 1.         0.875     ] | mean_ap: 0.9211 | f1: 0.6372 | lr: 0.000967 | tr: 0.843305
+log: processor.py show_epoch_info()
+[03.07.21|17:08:30] 	mean_loss: 3.507675410527263. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:08:30] 	mean_aps: [0.31979695 0.903223   0.97768413 0.93571349]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:08:30] 	mean_mean_ap: 0.9671224046937354. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:08:30] Time consumption:
+[03.07.21|17:08:30] Done.
+[03.07.21|17:08:30] Eval epoch: 34
+log: processor.py show_epoch_info()
+[03.07.21|17:08:37] 	mean_loss: 3.492009242375692. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:08:37] 	mean_aps: [0.05612245 0.69319633 0.91633661 0.62917556]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:08:37] 	mean_mean_ap: 0.768408870676337. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:08:37] Done.
+[03.07.21|17:08:37] Training epoch: 35
+[03.07.21|17:08:40] 	Iter 6900 Done. | loss: 3.5157 | aps: [1.         0.91666667 1.         0.8875    ] | mean_ap: 0.9510 | f1: 0.5675 | lr: 0.000966 | tr: 0.839089
+[03.07.21|17:09:21] 	Iter 7000 Done. | loss: 3.5536 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5444 | lr: 0.000966 | tr: 0.839089
+log: processor.py show_epoch_info()
+[03.07.21|17:09:58] 	mean_loss: 3.5069231478695944. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:09:58] 	mean_aps: [0.31979695 0.88680745 0.97811837 0.9565754 ]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:09:58] 	mean_mean_ap: 0.9688734018390798. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:09:58] Time consumption:
+[03.07.21|17:09:58] Done.
+[03.07.21|17:09:58] Eval epoch: 35
+log: processor.py show_epoch_info()
+[03.07.21|17:10:05] 	mean_loss: 3.4959273905981156. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:10:05] 	mean_aps: [0.12698413 0.65428517 0.91313067 0.7023222 ]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:10:05] 	mean_mean_ap: 0.7523922079353627. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:10:05] Done.
+[03.07.21|17:10:05] Training epoch: 36
+[03.07.21|17:10:09] 	Iter 7100 Done. | loss: 3.5082 | aps: [1.         1.         1.         0.86666667] | mean_ap: 0.9667 | f1: 0.7787 | lr: 0.000965 | tr: 0.834893
+[03.07.21|17:10:50] 	Iter 7200 Done. | loss: 3.4947 | aps: [0.         1.         0.96666667 1.        ] | mean_ap: 0.9889 | f1: 0.5625 | lr: 0.000965 | tr: 0.834893
+log: processor.py show_epoch_info()
+[03.07.21|17:11:26] 	mean_loss: 3.5059465405904704. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:11:26] 	mean_aps: [0.30287648 0.9052131  0.97544755 0.93436409]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:11:26] 	mean_mean_ap: 0.9649212267426326. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:11:26] Time consumption:
+[03.07.21|17:11:26] Done.
+[03.07.21|17:11:26] Eval epoch: 36
+log: processor.py show_epoch_info()
+[03.07.21|17:11:33] 	mean_loss: 3.491930904842558. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:11:33] 	mean_aps: [0.07791005 0.59370491 0.87953521 0.77325524]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:11:33] 	mean_mean_ap: 0.7466627728532491. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:11:33] Done.
+[03.07.21|17:11:33] Training epoch: 37
+[03.07.21|17:11:39] 	Iter 7300 Done. | loss: 3.5555 | aps: [0.         1.         0.91666667 1.        ] | mean_ap: 0.9722 | f1: 0.5270 | lr: 0.000964 | tr: 0.830719
+[03.07.21|17:12:20] 	Iter 7400 Done. | loss: 3.5221 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5286 | lr: 0.000964 | tr: 0.830719
+log: processor.py show_epoch_info()
+[03.07.21|17:12:56] 	mean_loss: 3.507551344518129. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:12:56] 	mean_aps: [0.3176819  0.91377106 0.97770302 0.94336489]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:12:56] 	mean_mean_ap: 0.9657526050365567. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:12:56] Time consumption:
+[03.07.21|17:12:56] Done.
+[03.07.21|17:12:56] Eval epoch: 37
+log: processor.py show_epoch_info()
+[03.07.21|17:13:02] 	mean_loss: 3.492247070584978. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:13:02] 	mean_aps: [0.07037037 0.55786659 0.89850323 0.59765811]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:13:02] 	mean_mean_ap: 0.6947125260905496. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:13:02] Done.
+[03.07.21|17:13:02] Training epoch: 38
+[03.07.21|17:13:10] 	Iter 7500 Done. | loss: 3.4567 | aps: [0. 1. 1. 0.] | mean_ap: 1.0000 | f1: 0.5000 | lr: 0.000963 | tr: 0.826565
+[03.07.21|17:13:51] 	Iter 7600 Done. | loss: 3.4547 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5167 | lr: 0.000963 | tr: 0.826565
+log: processor.py show_epoch_info()
+[03.07.21|17:14:25] 	mean_loss: 3.5063559403879387. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:14:25] 	mean_aps: [0.29695431 0.94256444 0.97589314 0.95831062]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:14:25] 	mean_mean_ap: 0.9683005044376761. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:14:25] Time consumption:
+[03.07.21|17:14:25] Done.
+[03.07.21|17:14:25] Eval epoch: 38
+log: processor.py show_epoch_info()
+[03.07.21|17:14:32] 	mean_loss: 3.492351804460798. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:14:32] 	mean_aps: [0.05714286 0.52283069 0.88152579 0.69217923]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:14:32] 	mean_mean_ap: 0.69029538219542. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:14:32] Done.
+[03.07.21|17:14:32] Training epoch: 39
+[03.07.21|17:14:40] 	Iter 7700 Done. | loss: 3.4795 | aps: [0.         0.87111111 1.         1.        ] | mean_ap: 0.9570 | f1: 0.5502 | lr: 0.000962 | tr: 0.822432
+[03.07.21|17:15:21] 	Iter 7800 Done. | loss: 3.4847 | aps: [0.         0.91666667 1.         0.86111111] | mean_ap: 0.9259 | f1: 0.5854 | lr: 0.000962 | tr: 0.822432
+log: processor.py show_epoch_info()
+[03.07.21|17:15:53] 	mean_loss: 3.506417055420464. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:15:53] 	mean_aps: [0.2641286  0.9327091  0.97920502 0.95164734]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:15:53] 	mean_mean_ap: 0.96474735871803. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:15:53] Time consumption:
+[03.07.21|17:15:53] Done.
+[03.07.21|17:15:53] Eval epoch: 39
+log: processor.py show_epoch_info()
+[03.07.21|17:16:00] 	mean_loss: 3.492157130014329. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:16:00] 	mean_aps: [0.06037415 0.52544123 0.89189072 0.70703389]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:16:00] 	mean_mean_ap: 0.706715734941831. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:16:00] Done.
+[03.07.21|17:16:00] Training epoch: 40
+[03.07.21|17:16:10] 	Iter 7900 Done. | loss: 3.5154 | aps: [0.         1.         0.91292517 0.93179563] | mean_ap: 0.9482 | f1: 0.5445 | lr: 0.000961 | tr: 0.818320
+[03.07.21|17:16:51] 	Iter 8000 Done. | loss: 3.4870 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5143 | lr: 0.000961 | tr: 0.818320
+log: processor.py show_epoch_info()
+[03.07.21|17:17:23] 	mean_loss: 3.506353358931953. Best so far: 3.4910327252887545 (epoch: 33).
+log: i  1
+[03.07.21|17:17:23] 	mean_aps: [0.32656514 0.91699755 0.97810634 0.95305855]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:17:23] 	mean_mean_ap: 0.9668197857745185. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:17:23] Time consumption:
+[03.07.21|17:17:23] Done.
+[03.07.21|17:17:23] Eval epoch: 40
+log: processor.py show_epoch_info()
+[03.07.21|17:17:30] 	mean_loss: 3.490246988478161. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:17:30] 	mean_aps: [0.0399093  0.44475057 0.90204673 0.62940558]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:17:30] 	mean_mean_ap: 0.6579497546237799. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:17:30] Done.
+[03.07.21|17:17:30] Training epoch: 41
+[03.07.21|17:17:41] 	Iter 8100 Done. | loss: 3.4709 | aps: [0.         0.96666667 1.         0.        ] | mean_ap: 0.9833 | f1: 0.4368 | lr: 0.000960 | tr: 0.814229
+[03.07.21|17:18:23] 	Iter 8200 Done. | loss: 3.4694 | aps: [0.         0.91666667 1.         0.91111111] | mean_ap: 0.9426 | f1: 0.5958 | lr: 0.000960 | tr: 0.814229
+log: processor.py show_epoch_info()
+[03.07.21|17:18:53] 	mean_loss: 3.505431843288054. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:18:53] 	mean_aps: [0.29780034 0.89927819 0.97450658 0.94542328]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:18:53] 	mean_mean_ap: 0.9659045298541638. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:18:53] Time consumption:
+[03.07.21|17:18:53] Done.
+[03.07.21|17:18:53] Eval epoch: 41
+log: processor.py show_epoch_info()
+[03.07.21|17:19:00] 	mean_loss: 3.4956240426926386. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:19:00] 	mean_aps: [0.08095238 0.49962284 0.88543522 0.60044551]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:19:00] 	mean_mean_ap: 0.6395204428840104. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:19:00] Done.
+[03.07.21|17:19:00] Training epoch: 42
+[03.07.21|17:19:12] 	Iter 8300 Done. | loss: 3.4968 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.5167 | lr: 0.000959 | tr: 0.810157
+[03.07.21|17:19:54] 	Iter 8400 Done. | loss: 3.4847 | aps: [0.         0.83928571 1.         0.82619048] | mean_ap: 0.8885 | f1: 0.6091 | lr: 0.000959 | tr: 0.810157
+log: processor.py show_epoch_info()
+[03.07.21|17:20:23] 	mean_loss: 3.5070357443717532. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:20:23] 	mean_aps: [0.26917654 0.91088925 0.97456124 0.94404741]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:20:23] 	mean_mean_ap: 0.9631764501737964. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:20:23] Time consumption:
+[03.07.21|17:20:23] Done.
+[03.07.21|17:20:23] Eval epoch: 42
+log: processor.py show_epoch_info()
+[03.07.21|17:20:30] 	mean_loss: 3.4918783051627025. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:20:30] 	mean_aps: [0.16666667 0.58067492 0.90763716 0.59364144]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:20:30] 	mean_mean_ap: 0.7162418469873116. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:20:30] Done.
+[03.07.21|17:20:30] Training epoch: 43
+[03.07.21|17:20:43] 	Iter 8500 Done. | loss: 3.4794 | aps: [0.         0.83333333 1.         1.        ] | mean_ap: 0.9444 | f1: 0.6416 | lr: 0.000958 | tr: 0.806107
+[03.07.21|17:21:25] 	Iter 8600 Done. | loss: 3.5232 | aps: [0.         0.94047619 0.86904762 0.91025641] | mean_ap: 0.9066 | f1: 0.5273 | lr: 0.000958 | tr: 0.806107
+log: processor.py show_epoch_info()
+[03.07.21|17:21:53] 	mean_loss: 3.506474220208105. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:21:53] 	mean_aps: [0.30304569 0.90511521 0.97507254 0.95704799]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:21:53] 	mean_mean_ap: 0.966904083514852. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:21:53] Time consumption:
+[03.07.21|17:21:53] Done.
+[03.07.21|17:21:53] Eval epoch: 43
+log: processor.py show_epoch_info()
+[03.07.21|17:22:00] 	mean_loss: 3.492769411631993. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:22:00] 	mean_aps: [0.04185563 0.58641546 0.88961183 0.65345112]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:22:00] 	mean_mean_ap: 0.7059733054276703. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:22:00] Done.
+[03.07.21|17:22:00] Training epoch: 44
+[03.07.21|17:22:14] 	Iter 8700 Done. | loss: 3.5430 | aps: [0.         0.95       0.7875     0.90952381] | mean_ap: 0.8823 | f1: 0.5759 | lr: 0.000957 | tr: 0.802076
+[03.07.21|17:22:55] 	Iter 8800 Done. | loss: 3.4793 | aps: [0.         0.81111111 1.         0.7       ] | mean_ap: 0.8370 | f1: 0.5606 | lr: 0.000957 | tr: 0.802076
+log: processor.py show_epoch_info()
+[03.07.21|17:23:22] 	mean_loss: 3.507925618118441. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:23:22] 	mean_aps: [0.27652284 0.91066008 0.96492107 0.93185934]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:23:22] 	mean_mean_ap: 0.9569127447345736. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:23:22] Time consumption:
+[03.07.21|17:23:22] Done.
+[03.07.21|17:23:22] Eval epoch: 44
+log: processor.py show_epoch_info()
+[03.07.21|17:23:29] 	mean_loss: 3.4944984912872314. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:23:29] 	mean_aps: [0.10079365 0.60412303 0.81401215 0.74170344]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:23:29] 	mean_mean_ap: 0.7210895741938063. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:23:29] Done.
+[03.07.21|17:23:29] Training epoch: 45
+[03.07.21|17:23:44] 	Iter 8900 Done. | loss: 3.5101 | aps: [1.         0.91666667 0.9484127  0.95      ] | mean_ap: 0.9538 | f1: 0.7080 | lr: 0.000956 | tr: 0.798066
+[03.07.21|17:24:25] 	Iter 9000 Done. | loss: 3.5280 | aps: [0.         0.94444444 0.91111111 0.97619048] | mean_ap: 0.9439 | f1: 0.5814 | lr: 0.000956 | tr: 0.798066
+log: processor.py show_epoch_info()
+[03.07.21|17:24:51] 	mean_loss: 3.507382356575903. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:24:51] 	mean_aps: [0.30795262 0.91798816 0.97516713 0.93827139]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:24:51] 	mean_mean_ap: 0.9642848700178764. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:24:51] Time consumption:
+[03.07.21|17:24:51] Done.
+[03.07.21|17:24:51] Eval epoch: 45
+log: processor.py show_epoch_info()
+[03.07.21|17:24:58] 	mean_loss: 3.4923763615744456. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:24:58] 	mean_aps: [0.04960317 0.4621712  0.87657424 0.69122368]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:24:58] 	mean_mean_ap: 0.6527610286538857. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:24:58] Done.
+[03.07.21|17:24:58] Training epoch: 46
+[03.07.21|17:25:15] 	Iter 9100 Done. | loss: 3.4838 | aps: [0. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.6032 | lr: 0.000955 | tr: 0.794075
+[03.07.21|17:25:56] 	Iter 9200 Done. | loss: 3.4839 | aps: [0.7        0.86111111 1.         0.95      ] | mean_ap: 0.8778 | f1: 0.6906 | lr: 0.000955 | tr: 0.794075
+log: processor.py show_epoch_info()
+[03.07.21|17:26:20] 	mean_loss: 3.5085490463953937. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:26:20] 	mean_aps: [0.31742809 0.90039514 0.96822484 0.94822554]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:26:20] 	mean_mean_ap: 0.9657020024742332. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:26:20] Time consumption:
+[03.07.21|17:26:20] Done.
+[03.07.21|17:26:20] Eval epoch: 46
+log: processor.py show_epoch_info()
+[03.07.21|17:26:27] 	mean_loss: 3.5006970450991677. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:26:27] 	mean_aps: [0.07698413 0.57223906 0.88704199 0.57748956]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:26:27] 	mean_mean_ap: 0.6869573099802692. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:26:27] Done.
+[03.07.21|17:26:27] Training epoch: 47
+[03.07.21|17:26:45] 	Iter 9300 Done. | loss: 3.5103 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.8597 | lr: 0.000954 | tr: 0.790105
+[03.07.21|17:27:26] 	Iter 9400 Done. | loss: 3.4950 | aps: [1.   1.   1.   0.95] | mean_ap: 0.9875 | f1: 0.6810 | lr: 0.000954 | tr: 0.790105
+log: processor.py show_epoch_info()
+[03.07.21|17:27:49] 	mean_loss: 3.509584541853309. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:27:49] 	mean_aps: [0.31302876 0.93593099 0.96781761 0.95038952]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:27:49] 	mean_mean_ap: 0.9646905540812408. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:27:49] Time consumption:
+[03.07.21|17:27:49] Done.
+[03.07.21|17:27:49] Eval epoch: 47
+log: processor.py show_epoch_info()
+[03.07.21|17:27:56] 	mean_loss: 3.495509011404855. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:27:56] 	mean_aps: [0.08068783 0.63445939 0.81164438 0.64824263]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:27:56] 	mean_mean_ap: 0.7112864863223896. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:27:56] Done.
+[03.07.21|17:27:56] Training epoch: 48
+[03.07.21|17:28:15] 	Iter 9500 Done. | loss: 3.4970 | aps: [0.         0.92403628 0.97654321 0.88194444] | mean_ap: 0.9275 | f1: 0.6066 | lr: 0.000953 | tr: 0.786154
+[03.07.21|17:28:56] 	Iter 9600 Done. | loss: 3.5374 | aps: [1.         1.         0.83035714 1.        ] | mean_ap: 0.9576 | f1: 0.8042 | lr: 0.000953 | tr: 0.786154
+log: processor.py show_epoch_info()
+[03.07.21|17:29:18] 	mean_loss: 3.5113092013422005. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:29:18] 	mean_aps: [0.30752961 0.91590314 0.97145573 0.94142612]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:29:18] 	mean_mean_ap: 0.9622587303806082. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:29:18] Time consumption:
+[03.07.21|17:29:18] Done.
+[03.07.21|17:29:18] Eval epoch: 48
+log: processor.py show_epoch_info()
+[03.07.21|17:29:25] 	mean_loss: 3.497075852893648. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:29:25] 	mean_aps: [0.11666667 0.59284769 0.86263568 0.70710003]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:29:25] 	mean_mean_ap: 0.7057734005765338. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:29:25] Done.
+[03.07.21|17:29:25] Training epoch: 49
+[03.07.21|17:29:45] 	Iter 9700 Done. | loss: 3.5438 | aps: [1. 1. 1. 1.] | mean_ap: 1.0000 | f1: 0.7068 | lr: 0.000952 | tr: 0.782224
+[03.07.21|17:30:26] 	Iter 9800 Done. | loss: 3.4763 | aps: [0.   1.   1.   0.75] | mean_ap: 0.9167 | f1: 0.5020 | lr: 0.000952 | tr: 0.782224
+log: processor.py show_epoch_info()
+[03.07.21|17:30:46] 	mean_loss: 3.5109315789895614. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:30:46] 	mean_aps: [0.30118443 0.91966192 0.96988878 0.93835837]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:30:46] 	mean_mean_ap: 0.9610929702003145. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:30:46] Time consumption:
+[03.07.21|17:30:46] Done.
+[03.07.21|17:30:46] Eval epoch: 49
+log: processor.py show_epoch_info()
+[03.07.21|17:30:53] 	mean_loss: 3.496769212541126. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:30:53] 	mean_aps: [0.05461073 0.46654444 0.77195151 0.66017946]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:30:53] 	mean_mean_ap: 0.6254184073053357. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:30:53] Done.
+[03.07.21|17:30:53] Training epoch: 50
+[03.07.21|17:31:15] 	Iter 9900 Done. | loss: 3.5175 | aps: [0.         1.         0.95       0.91666667] | mean_ap: 0.9556 | f1: 0.5568 | lr: 0.000951 | tr: 0.778313
+[03.07.21|17:31:57] 	Iter 10000 Done. | loss: 3.5287 | aps: [1.         0.86666667 1.         1.        ] | mean_ap: 0.9667 | f1: 0.8214 | lr: 0.000951 | tr: 0.778313
+log: processor.py show_epoch_info()
+[03.07.21|17:32:17] 	mean_loss: 3.5106656515053687. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:32:17] 	mean_aps: [0.31218274 0.89187538 0.96919022 0.92979182]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:32:17] 	mean_mean_ap: 0.9622527419862194. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:32:17] Time consumption:
+[03.07.21|17:32:17] Done.
+[03.07.21|17:32:17] Eval epoch: 50
+log: processor.py show_epoch_info()
+[03.07.21|17:32:24] 	mean_loss: 3.498312779835292. Best so far: 3.490246988478161 (epoch: 40).
+log: i  1
+[03.07.21|17:32:24] 	mean_aps: [0.0968254  0.54700491 0.78453966 0.74622071]. Best so far: 0 (epoch: 17).
+log: i  2
+[03.07.21|17:32:24] 	mean_mean_ap: 0.6886249158453664. Best so far: 0.8080140974493298 (epoch: 17).
+log: i  3
+[03.07.21|17:32:24] Done.
+[03.07.21|17:32:24] Training epoch: 51
+[03.07.21|17:32:48] 	Iter 10100 Done. | loss: 3.5374 | aps: [1.         1.         1.         0.87666667] | mean_ap: 0.9692 | f1: 0.6288 | lr: 0.000950 | tr: 0.774421
